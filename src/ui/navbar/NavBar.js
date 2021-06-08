@@ -17,20 +17,21 @@ const NavBar = () => {
             </ThemeProvider>
 
             <div className={"logo"}>
-                <h3>Logo</h3>
+                <div><img className={"logopic"} src={"favicon.png"}/></div>
+                <div className={"logotext"}>PalmGreen</div>
             </div>
 
             <div className={"mainbar"}>
-                <a href={"#"}>link</a>
+                <a href={"#"}><span>Me</span></a>
+                <a href={"#"}>Myself</a>
+                <a href={"#"}>&</a>
+                <a href={"#"}>i</a>
             </div>
 
             <div className={"buttonbar"}>
-                <button onClick={themeToggler}>Switch Theme</button>
+                {/*<button onClick={themeToggler}>Switch Theme</button>*/}
+                <input type="checkbox" className="toggle" onClick={themeToggler}/>
             </div>
-
-            <hr />
-            <hr />
-            <hr />
 
         </div>
     )
