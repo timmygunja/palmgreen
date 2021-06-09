@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
   
-  a, .logotext {
+  a, .logotext, .section-legend {
     color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
   }
@@ -23,6 +23,15 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.navLinkHover};
   }
   
+  .section-outline {
+    border: 2px solid ${({ theme }) => theme.sectionOutline};
+    transition: all 0.25s linear;
+  }
+
+  .section-legend {
+    color: ${({ theme }) => theme.sectionLegend};
+    transition: all 0.25s linear;
+  }
   `
 
 export default GlobalStyles
