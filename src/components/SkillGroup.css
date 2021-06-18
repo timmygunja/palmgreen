@@ -1,0 +1,12 @@
+/*.skill-table {*/
+/*    visibility: visible;*/
+/*}*/
+
+/*.skill-group-title {*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.skill-group-title:hover + .skill-table,*/
+/*.skill-group-title:focus + .skill-table {*/
+/*    visibility: visible;*/
+/*}*/
