@@ -5,19 +5,6 @@
     list-style: none;
 }
 
-/*.skill-list {*/
-/*    margin: 10px 20%;*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr 1fr;*/
-/*    !*grid-template-rows: 1fr 3fr;*!*/
-/*    !*text-align: center;*!*/
-/*}*/
-
-/*.skill-table {*/
-/*    !*display: grid;*!*/
-/*    !*grid-template-columns: 1fr;*!*/
-/*}*/
-
 .skill-list {
     margin: 10px 20%;
     display: grid;
@@ -27,29 +14,61 @@
 
 .skill-titles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 10px;
-    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.skill-titles h3 {
+    height: 50px;
+    line-height: 50px;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+}
+
+.skill-titles h3:hover {
+    cursor: pointer;
+    background: whitesmoke;
+}
+
+.skill-titles h3:nth-child(1):hover,
+.skill-titles h3:nth-child(1):visited {
+    color: rgb(5, 157, 67);
+    border-bottom: 1px solid rgb(5, 157, 67);
+    box-shadow: inset 0 -40px 15px -37px rgba(5, 157, 67, 0.4);
+    transition: all 0.1s linear;
+}
+
+.skill-titles h3:nth-child(2):hover {
+    color: rgb(21, 43, 195);
+    border-bottom: 1px solid rgb(21, 43, 195);
+    box-shadow: inset 0 -40px 15px -37px rgba(21, 43, 195, 0.4);
+    transition: all 0.1s linear;
+}
+
+.skill-titles h3:nth-child(3):hover {
+    color: rgb(200, 84, 7);
+    border-bottom: 1px solid rgb(200, 84, 7);
+    box-shadow: inset 0 -40px 15px -37px rgba(255, 100, 0, 0.4);
+    transition: all 0.1s linear;
+}
+
+.skill-titles h3:nth-child(4):hover {
+    color: rgb(150, 63, 203);
+    border-bottom: 1px solid rgb(150, 63, 203);
+    box-shadow: inset 0 -40px 15px -37px rgba(150, 63, 203, 0.4);
+    transition: all 0.1s linear;
+}
+
+.skill-titles h3:nth-child(5):hover {
+    color: rgb(25, 129, 23);
+    border-bottom: 1px solid rgb(25, 129, 23);
+    box-shadow: inset 0 -40px 15px -37px rgba(25, 129, 23, 0.4);
+    transition: all 0.1s linear;
 }
 
 .skill-tables {
     display: grid;
 }
 
-.table {
-    visibility: hidden;
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.table-active {
-    visibility: visible;
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.table-active {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 

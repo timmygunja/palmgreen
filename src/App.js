@@ -31,11 +31,11 @@ function App() {
             <div>
                 <div className={"skill-list"}>
                     <div className={"skill-titles"}>
-                        <h3 onClick={() => { hideSkillTable(); setWeb("table-active") }}>Web</h3>
-                        <h3 onClick={() => { hideSkillTable(); setPython("table-active") }}>Python</h3>
-                        <h3 onClick={() => { hideSkillTable(); setJava("table-active") }}>Java</h3>
-                        <h3 onClick={() => { hideSkillTable(); setDevOps("table-active") }}>DevOps</h3>
-                        <h3 onClick={() => { hideSkillTable(); setSql("table-active") }}>Sql</h3>
+                        <h3 id={"web"} onClick={() => { hideSkillTable(); setWeb("table-active") }}>Web</h3>
+                        <h3 id={"python"} onClick={() => { hideSkillTable(); setPython("table-active") }}>Python</h3>
+                        <h3 id={"java"} onClick={() => { hideSkillTable(); setJava("table-active") }}>Java</h3>
+                        <h3 id={"devOps"} onClick={() => { hideSkillTable(); setDevOps("table-active") }}>DevOps</h3>
+                        <h3 id={"sql"} onClick={() => { hideSkillTable(); setSql("table-active") }}>Sql</h3>
                     </div>
                     <div className="skill-tables">
                         <SkillTable className={web}>
@@ -49,7 +49,7 @@ function App() {
                             <Skill name={"BeautifulSoup"} />
                             <Skill name={"Selenium"} />
                             <Skill name={"Flask"} />
-                            <Skill name={"SqlLite"} />
+                            <Skill name={"Sqlite3"} />
                             <Skill name={"SqlAlchemy"} />
                             <Skill name={"Django"} />
                             <Skill name={"TelegramBot"} />
