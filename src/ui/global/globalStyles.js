@@ -7,7 +7,10 @@ const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
   
-  a, .logotext, .section-legend {
+  a, 
+  .logotext, 
+  .section-legend,
+  .skill-titles {
     color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
   }
@@ -17,9 +20,16 @@ const GlobalStyles = createGlobalStyle`
     border-bottom: 1px solid ${({ theme }) => theme.navBorder};
     transition: all 0.25s linear;
   }
+  
+  .skill-titles h3 {
+    border-bottom: 1px solid ${({ theme }) => theme.skillTitlesBorder};
+    transition: all 0.25s linear;
+  }
 
-  .mainbar a:hover,
-  .mainbar a:focus {
+  .mainbar a:hover, 
+  .mainbar a:focus,
+  .skill-titles h3:hover,
+  .skill-titles h3:focus {
     background-color: ${({ theme }) => theme.navLinkHover};
   }
   

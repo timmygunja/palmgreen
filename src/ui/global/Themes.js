@@ -5,7 +5,8 @@ export const lightTheme = {
     navBorder: '#f5f5f5',
     navLinkHover: '#f5f5f5',
     sectionLegend: 'rgba(0, 0, 0, 0.4)',
-    sectionOutline: 'rgba(0, 0, 0, 0.1)'
+    sectionOutline: 'rgba(0, 0, 0, 0.1)',
+    skillTitlesBorder: '#000000',
 }
 
 export const darkTheme = {
@@ -15,5 +16,6 @@ export const darkTheme = {
     navBorder: '#ff69b4',
     navLinkHover: '#4a4a4a',
     sectionLegend: '#f5f5f5',
-    sectionOutline: 'rgba(255,105,180, 0.7)'
+    sectionOutline: 'rgba(255,105,180, 0.7)',
+    skillTitlesBorder: '#ff69b4',
 }
