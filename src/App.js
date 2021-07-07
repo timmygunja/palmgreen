@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components"
 import NavBar from "./ui/layout/NavBar";
 import Section from "./ui/Section";
 import SkillList from "./components/SkillList";
+import Bio from "./components/Bio";
 
 function App() {
 
@@ -12,6 +13,11 @@ function App() {
         {/*<header className="App-header">*/}
         {/*</header>*/}
         <NavBar />
+
+        <Section name={"Bio"}>
+            <Bio />
+        </Section>
+
         <Section name={"Skills"}>
             <SkillList />
         </Section>

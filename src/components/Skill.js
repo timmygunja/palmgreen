@@ -4,7 +4,7 @@ const Skill = (props) => {
     return(
         <div className={"skill"}>
             <p>{props.name}</p>
-            {/*<p className={"skill-bar"}>yoy</p>*/}
+            {/*<p className={"skill-bar"}>{props.rate} / 10</p>*/}
         </div>
     )
 }
