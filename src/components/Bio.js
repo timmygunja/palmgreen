@@ -1,10 +1,10 @@
 import "./Bio.css"
-import BioSvg from "../ui/BioSvg";
+import BioPng from "../ui/BioPng";
 
 const Bio = (props) => {
     return(
         <div className={"bio"}>
-            <BioSvg />
+            <BioPng />
         </div>
     )
 }
