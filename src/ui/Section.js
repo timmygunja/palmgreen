@@ -1,18 +1,15 @@
-import "./Section.css"
+import "./Section.css";
 
 const Section = (props) => {
-    return(
-        <div className={"section"}>
-            <fieldset className={"section-outline"}>
-                <legend className={"section-legend"}>
-                    {props.name}
-                </legend>
-                {props.children}
-            </fieldset>
+  console.log("section render");
+  return (
+    <div className={"section"}>
+      <fieldset className={"section-outline"}>
+        <legend className={"section-legend"}>{props.name}</legend>
+        {props.children}
+      </fieldset>
+    </div>
+  );
+};
 
-
-        </div>
-    )
-}
-
-export default Section
+export default Section;
