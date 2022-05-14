@@ -1,0 +1,63 @@
+.skill {
+    display: grid;
+}
+
+.skill-bar {
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-point, 
+.skill-point-disabled {
+    width: 1px;
+    height: 7px;
+    margin: 0 2px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.skill-point-disabled {
+    background-color: rgba(125, 125, 125, 0.7);
+}
+
+.skill-point:nth-child(1) {
+    background-color: red;
+}
+
+.skill-point:nth-child(2) {
+    background-color: rgb(255, 98, 0);
+}
+
+.skill-point:nth-child(3) {
+    background-color: rgb(255, 132, 0);
+}
+
+.skill-point:nth-child(4) {
+    background-color: rgb(255, 230, 0);
+}
+
+.skill-point:nth-child(5) {
+    background-color: rgb(255, 238, 0);
+}
+
+.skill-point:nth-child(6) {
+    background-color: rgb(225, 255, 0);
+}
+
+.skill-point:nth-child(7) {
+    background-color: rgb(162, 255, 0);
+}
+
+.skill-point:nth-child(8) {
+    background-color: rgb(30, 255, 0);
+}
+
+.skill-point:nth-child(9) {
+    background-color: rgb(0, 255, 89);
+}
+
+.skill-point:nth-child(10) {
+    background-color: rgb(0, 255, 115);
+}

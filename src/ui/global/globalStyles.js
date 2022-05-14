@@ -1,4 +1,4 @@
-import { createGlobalStyle} from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -42,6 +42,10 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.sectionLegend};
     transition: all 0.25s linear;
   }
-  `
 
-export default GlobalStyles
+  .toggle {
+    border-color: ${({ theme }) => theme.toggleBorderColor};
+  }
+  `;
+
+export default GlobalStyles;

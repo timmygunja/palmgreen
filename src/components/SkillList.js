@@ -25,14 +25,14 @@ const SkillList = (props) => {
                 <h3 id={"python"} onClick={() => { hideSkillTable(); setPython("table-active") }}>Python</h3>
                 <h3 id={"java"} onClick={() => { hideSkillTable(); setJava("table-active") }}>Java</h3>
                 <h3 id={"devOps"} onClick={() => { hideSkillTable(); setDevOps("table-active") }}>DevOps</h3>
-                <h3 id={"sql"} onClick={() => { hideSkillTable(); setSql("table-active") }}>Sql</h3>
+                <h3 id={"sql"} onClick={() => { hideSkillTable(); setSql("table-active") }}>SQL</h3>
             </div>
             <div className="skill-tables">
                 <SkillTable className={web}>
                     <Skill name={"HTML"} />
-                    <Skill name={"CSS"} />
-                    <Skill name={"JavaScript"} />
-                    <Skill name={"React JS"} />
+                    <Skill name={"CSS"} stars={5} />
+                    <Skill name={"JavaScript"} stars={3} />
+                    <Skill name={"React JS"} stars={8} />
                     <Skill name={"Figma..."} />
                 </SkillTable>
                 <SkillTable className={python}>

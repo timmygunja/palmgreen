@@ -14,9 +14,9 @@ function App() {
         {/*</header>*/}
         <NavBar />
 
-        <Section name={"Bio"}>
-            <Bio />
-        </Section>
+        {/* <Section name={"Bio"}> */}
+            {/* <Bio /> */}
+        {/* </Section> */}
 
         <Section name={"Skills"}>
             <SkillList />

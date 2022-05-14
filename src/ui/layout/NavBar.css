@@ -97,8 +97,9 @@ input[type=checkbox]:focus {
     transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
 }
 .toggle:checked {
-    border-color: #ff69b4;
+    /* border-color: #ff69b4; */
     background: rgb(41, 72, 117);
+    /* color: rgb(34, 224, 123); */
 }
 .toggle:checked:after {
     transform: translatex(20px);
