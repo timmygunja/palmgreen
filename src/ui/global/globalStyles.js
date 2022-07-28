@@ -46,6 +46,17 @@ const GlobalStyles = createGlobalStyle`
   .toggle {
     border-color: ${({ theme }) => theme.toggleBorderColor};
   }
+
+  g.logoBlend {
+    mix-blend-mode: ${({ theme }) => theme.blendMode};
+  }
+  
+  g.logoBlend > rect {
+    fill: ${({ theme }) => theme.body};
+  }
+  
+  g.logoBlend > path {
+    stroke: ${({ theme }) => theme.pathStroke};
   `;
 
 export default GlobalStyles;

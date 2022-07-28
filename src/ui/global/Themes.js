@@ -7,6 +7,9 @@ export const lightTheme = {
   sectionLegend: "rgba(0, 0, 0, 0.4)",
   sectionOutline: "rgba(0, 0, 0, 0.1)",
   skillTitlesBorder: "#000000",
+  // exam charts
+  blendMode: "lighten",
+  pathStroke: "black",
 };
 
 // const mainDarkColor = "#ff69b4";
@@ -23,5 +26,8 @@ export const darkTheme = {
   sectionLegend: "#f5f5f5",
   sectionOutline: secondaryDarkColor,
   skillTitlesBorder: mainDarkColor,
-  toggleBorderColor: secondaryDarkColor
+  toggleBorderColor: secondaryDarkColor,
+  // exam charts
+  blendMode: "darken",
+  pathStroke: "white",
 };

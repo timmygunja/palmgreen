@@ -34,9 +34,9 @@
 
 #python:hover,
 #python:visited {
-    color: rgb(36, 68, 255);
-    border-bottom: 1px solid rgb(36, 68, 255);
-    box-shadow: inset 0 -40px 15px -37px rgba(36, 68, 255, 0.6);
+    color: rgb(52, 82, 255);
+    border-bottom: 1px solid rgb(52, 82, 255);
+    box-shadow: inset 0 -40px 15px -37px rgba(52, 82, 255, 0.6);
     transition: all 0.1s linear;
 }
 

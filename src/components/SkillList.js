@@ -29,37 +29,37 @@ const SkillList = (props) => {
             </div>
             <div className="skill-tables">
                 <SkillTable className={web}>
-                    <Skill name={"HTML"} />
-                    <Skill name={"CSS"} stars={5} />
-                    <Skill name={"JavaScript"} stars={3} />
-                    <Skill name={"React JS"} stars={8} />
-                    <Skill name={"Figma..."} />
+                    <Skill name={"HTML"} stars={15} />
+                    <Skill name={"CSS"} stars={13} />
+                    <Skill name={"JavaScript"} stars={15} />
+                    <Skill name={"React JS"} stars={16} />
+                    <Skill name={"Figma..."} stars={6} />
                 </SkillTable>
                 <SkillTable className={python}>
-                    <Skill name={"BeautifulSoup"} />
-                    <Skill name={"Selenium"} />
-                    <Skill name={"Flask"} />
-                    <Skill name={"Sqlite3"} />
-                    <Skill name={"SqlAlchemy"} />
-                    <Skill name={"Django"} />
-                    <Skill name={"TelegramBot"} />
+                    <Skill name={"BeautifulSoup"} stars={13} />
+                    <Skill name={"Selenium"} stars={12} />
+                    <Skill name={"Flask"} stars={10} />
+                    <Skill name={"Sqlite3"} stars={12} />
+                    <Skill name={"SqlAlchemy"} stars={12} />
+                    <Skill name={"Django"} stars={13} />
+                    <Skill name={"TelegramBot"} stars={16} />
                 </SkillTable>
                 <SkillTable className={java}>
-                    <Skill name={"Hibernate"} />
-                    <Skill name={"SpringBoot"} />
-                    <Skill name={"JUnit"} />
-                    <Skill name={"JavaFX"} />
-                    <Skill name={"TelegramBot"} />
+                    <Skill name={"Hibernate"} stars={10}/>
+                    <Skill name={"SpringBoot"} stars={10}/>
+                    <Skill name={"JUnit"} stars={6}/>
+                    <Skill name={"JavaFX"} stars={12} />
+                    <Skill name={"TelegramBot"} stars={15} />
                 </SkillTable>
                 <SkillTable className={devOps}>
-                    <Skill name={"Linux bash"} />
-                    <Skill name={"MacOS zsh"} />
-                    <Skill name={"Docker..."} />
+                    <Skill name={"Linux bash"} stars={15} />
+                    <Skill name={"MacOS zsh"} stars={12} />
+                    <Skill name={"Docker..."} stars={3} />
                 </SkillTable>
                 <SkillTable className={sql}>
-                    <Skill name={"Script-writing"} />
-                    <Skill name={"Postgre"} />
-                    <Skill name={"Oracle sql"} />
+                    <Skill name={"Script-writing"} stars={11} />
+                    <Skill name={"Postgre"} stars={7} />
+                    <Skill name={"Oracle sql"} stars={11} />
                 </SkillTable>
             </div>
         </div>

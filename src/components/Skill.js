@@ -3,7 +3,7 @@ import "./Skill.css";
 const Skill = (props) => {
   const skillPoints = [];
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 20; i++) {
     skillPoints[i] = <div className="skill-point-disabled"></div>;
   }
 
@@ -13,7 +13,7 @@ const Skill = (props) => {
 
   return (
     <div className={"skill"}>
-      <p>{props.name}</p>
+      <p className={"skill-name"}>{props.name}</p>
       <div className={"skill-bar"}>
         {skillPoints.map((item) => {
           return item;
