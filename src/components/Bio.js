@@ -1,6 +1,7 @@
 import "./Bio.css";
 import BioPng from "../ui/BioPng";
 import { useEffect } from "react";
+import ExamChart from "./ExamChart";
 
 const Bio = (props) => {
   useEffect(() => {
@@ -67,7 +68,7 @@ const Bio = (props) => {
             </div>
           </div>
 
-          <div className="education-card exams">
+          {/* <div className="education-card exams">
             <div className="education-card-logo">
               <img src={"../../exams.png"}></img>
             </div>
@@ -89,136 +90,17 @@ const Bio = (props) => {
                 <p className="exam-score">83</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="education-card exams">
             <div className="education-card-logo">
               <img src={"../../exams.png"}></img>
             </div>
             <div className="education-card-info">
-              <div class="block">
-                <div class="box">
-                  <p class="number">
-                    <span class="num">80</span>
-                  </p>
-                  <p class="title">Maths</p>
-                </div>
-                <svg viewBox="0 0 100 100" class="svg">
-                  <foreignObject
-                    class="logoBack"
-                    x="0"
-                    y="0"
-                    width="100"
-                    height="100"
-                  >
-                    <div
-                      class="logoGradient"
-                      xmlns="http://www.w3.org/1999/xhtml"
-                    ></div>
-                  </foreignObject>
-
-                  <g class="logoBlend">
-                    <rect x="0" y="0" width="100%" height="100%" />
-                    <path
-                      class="logoBlendPath"
-                      d="M 50 96 a 46 46 0 0 1 0 -92 46 46 0 0 1 0 92"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div class="block">
-                <div class="box">
-                  <p class="number">
-                    <span class="num">96</span>
-                  </p>
-                  <p class="title">Russian</p>
-                </div>
-                <span class="dots"></span>
-                <svg viewBox="0 0 100 100" class="svg">
-                  <foreignObject
-                    class="logoBack"
-                    x="0"
-                    y="0"
-                    width="100"
-                    height="100"
-                  >
-                    <div
-                      class="logoGradient"
-                      xmlns="http://www.w3.org/1999/xhtml"
-                    ></div>
-                  </foreignObject>
-
-                  <g class="logoBlend">
-                    <rect x="0" y="0" width="100%" height="100%" />
-                    <path
-                      class="logoBlendPath"
-                      d="M 50 96 a 46 46 0 0 1 0 -92 46 46 0 0 1 0 92"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div class="block">
-                <div class="box">
-                  <p class="number">
-                    <span class="num">83</span>
-                  </p>
-                  <p class="title">Computer Science</p>
-                </div>
-
-                <svg viewBox="0 0 100 100" class="svg">
-                  <foreignObject
-                    class="logoBack"
-                    x="0"
-                    y="0"
-                    width="100"
-                    height="100"
-                  >
-                    <div
-                      class="logoGradient"
-                      xmlns="http://www.w3.org/1999/xhtml"
-                    ></div>
-                  </foreignObject>
-
-                  <g class="logoBlend">
-                    <rect x="0" y="0" width="100%" height="100%" />
-                    <path
-                      class="logoBlendPath"
-                      d="M 50 96 a 46 46 0 0 1 0 -92 46 46 0 0 1 0 92"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div class="block">
-                <div class="box">
-                  <p class="number">
-                    <span class="num">83</span>
-                  </p>
-                  <p class="title">Englsih</p>
-                </div>
-
-                <svg viewBox="0 0 100 100" class="svg">
-                  <foreignObject
-                    class="logoBack"
-                    x="0"
-                    y="0"
-                    width="100"
-                    height="100"
-                  >
-                    <div
-                      class="logoGradient"
-                      xmlns="http://www.w3.org/1999/xhtml"
-                    ></div>
-                  </foreignObject>
-
-                  <g class="logoBlend">
-                    <rect x="0" y="0" width="100%" height="100%" />
-                    <path
-                      class="logoBlendPath"
-                      d="M 50 96 a 46 46 0 0 1 0 -92 46 46 0 0 1 0 92"
-                    />
-                  </g>
-                </svg>
-              </div>
+              <ExamChart name="Maths" mark="80" />
+              <ExamChart name="Computer Science" mark="83" />
+              <ExamChart name="English" mark="83" />
+              <ExamChart name="Russian" mark="96" />
             </div>
           </div>
 
