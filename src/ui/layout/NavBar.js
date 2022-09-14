@@ -3,11 +3,30 @@ import { useState } from "react";
 import GlobalStyles from "../global/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../global/Themes";
+import { useDispatch, useSelector } from "react-redux";
+import { uiActions } from "../../store/ui-slice";
+// import { refs } from "../../App.js";
+// import background from "../../../flagusa.png";
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [theme, setTheme] = useState("light");
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+  const language = useSelector((state) => state.ui.language);
+  const dispatch = useDispatch();
+  const [languageButtonClass, setLanguageButtonClass] =
+    useState("languagetoggle");
+
+  const languageToggler = () => {
+    language === "english"
+      ? dispatch(uiActions.switchLanguage(props.sources.ruText))
+      : dispatch(uiActions.switchLanguage(props.sources.engText));
+
+    languageButtonClass === "languagetoggle"
+      ? setLanguageButtonClass("languagetoggle moved")
+      : setLanguageButtonClass("languagetoggle");
   };
 
   return (
@@ -24,16 +43,28 @@ const NavBar = () => {
       </div>
 
       <div className={"mainbar"}>
-        <a href={"#"}>
-          <span>Me</span>
+        <a
+          href={"#"}
+          // onClick={props.refs.refMe.current?.scrollIntoView({
+          //   behavior: "smooth",
+          // })}
+          onClick={props.onClickMe}
+        >
+          Me
         </a>
         <a href={"#"}>Myself</a>
         <a href={"#"}>&</a>
         <a href={"#"}>i</a>
       </div>
 
+      {/* <div className={""}></div> */}
+
       <div className={"buttonbar"}>
-        <input type="checkbox" className="toggle" onClick={themeToggler} />
+        <div class={languageButtonClass} onClick={languageToggler}>
+          <span class="label-up">English</span>
+          <span class="label-up">Русский</span>
+        </div>
+        <input type="checkbox" className="themetoggle" onClick={themeToggler} />
       </div>
     </div>
   );

@@ -12,14 +12,14 @@ const Skill = (props) => {
   }
 
   return (
-    <div className={"skill"}>
+    <a className={"skill"} href={props.link}>
       <p className={"skill-name"}>{props.name}</p>
       <div className={"skill-bar"}>
         {skillPoints.map((item) => {
           return item;
         })}
       </div>
-    </div>
+    </a>
   );
 };
 

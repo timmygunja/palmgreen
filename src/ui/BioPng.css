@@ -1,8 +1,9 @@
 .biopng {
-    margin: 10px 5%;
-    text-align: center;
+  margin: 10px 5%;
+  text-align: center;
 }
 
 .biopng img {
-    width: 85%;
+  max-width: 100%;
+  height: 80vh;
 }

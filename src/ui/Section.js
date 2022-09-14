@@ -1,7 +1,6 @@
 import "./Section.css";
 
 const Section = (props) => {
-  console.log("section render");
   return (
     <div className={"section"}>
       <fieldset className={"section-outline"}>
