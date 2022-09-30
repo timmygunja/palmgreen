@@ -72,12 +72,23 @@
 .education-card {
   display: grid;
   grid-template-columns: 1fr 10fr;
-  grid-template-areas: "logo info";
+  grid-template-areas: "prev info";
   grid-gap: 0 30px;
 }
 
+.education-card-prev {
+  grid-area: prev;
+  text-align: center;
+}
+
+.education-card-prev p {
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
 .education-card-logo {
-  grid-area: logo;
+  /* grid-area: logo; */
   display: flex;
   align-items: center;
   justify-content: center;

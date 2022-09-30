@@ -6,6 +6,18 @@ import { useSelector } from "react-redux";
 
 const Bio = (props) => {
   const bioText = useSelector((state) => state.ui.currentText.bio);
+  const eduTitle = useSelector((state) => state.ui.currentText.eduTitle);
+  const eduSchoolTitle = useSelector(
+    (state) => state.ui.currentText.eduSchoolTitle
+  );
+  const eduSchoolYears = useSelector(
+    (state) => state.ui.currentText.eduSchoolYears
+  );
+  const eduUniTitle = useSelector((state) => state.ui.currentText.eduUniTitle);
+  const eduUniYears = useSelector((state) => state.ui.currentText.eduUniYears);
+  const eduMagTitle = useSelector((state) => state.ui.currentText.eduMagTitle);
+  const eduMagYears = useSelector((state) => state.ui.currentText.eduMagYears);
+
   // const language = useSelector((state) => state.ui.language);
   // const bioText = language === "english" ? useSelector((state) => state.ui.language);
 
@@ -42,39 +54,28 @@ const Bio = (props) => {
     <div className={"bio"}>
       {/* <BioPng /> */}
       <div className="bio-about">
-        {/* <h3 className="bio-title">Junior Frontend Developer WannaBe</h3> */}
+        {/* <h3 className="bio-title">Junior Frontend Developer</h3> */}
         <div className="bio-avatar">
           <img src={"../../face.jpeg"}></img>
         </div>
 
-        {/* <div className="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </div> */}
-
         <div className="bio-text">{bioText}</div>
-        {/* <div className="bio-text">{props.textSource.bio}</div> */}
       </div>
       <div className="bio-education">
-        <div className="bio-education-title">Education</div>
+        <div className="bio-education-title">{eduTitle}</div>
+
         <div className="education-card">
-          <div className="education-card-logo">
-            <img src={"../../school.png"}></img>
+          <div className="education-card-prev hard-centered">
+            <div>
+              <div className="education-card-logo">
+                <img src={"../../school.png"}></img>
+              </div>
+              <p>mid - high</p>
+            </div>
           </div>
           <div className="education-card-info">
-            <p className="bio-education-place">
-              School #13, Nalchik bla bla bla
-            </p>
-            <p className="bio-education-years">2008 - 2019</p>
+            <p className="bio-education-place">{eduSchoolTitle}</p>
+            <p className="bio-education-years">{eduSchoolYears}</p>
             <ul className="bio-education-achievements">
               <p>Gold medal lol</p>
               <p>sport spirt</p>
@@ -83,8 +84,13 @@ const Bio = (props) => {
         </div>
 
         <div className="education-card exams">
-          <div className="education-card-logo">
-            <img src={"../../exams.png"}></img>
+          <div className="education-card-prev hard-centered">
+            <div>
+              <div className="education-card-logo">
+                <img src={"../../exams.png"}></img>
+              </div>
+              <p>mid - high</p>
+            </div>
           </div>
           <div className="education-card-info">
             <ExamChart name="Maths" mark="80" />
@@ -95,12 +101,17 @@ const Bio = (props) => {
         </div>
 
         <div className="education-card">
-          <div className="education-card-logo">
-            <img src={"../../univer.png"}></img>
+          <div className="education-card-prev hard-centered">
+            <div>
+              <div className="education-card-logo">
+                <img src={"../../univer.png"}></img>
+              </div>
+              <p>asad</p>
+            </div>
           </div>
           <div className="education-card-info">
-            <p className="bio-education-place">Finashka vot eto vot</p>
-            <p className="bio-education-years">2019 - 2023</p>
+            <p className="bio-education-place">{eduUniTitle}</p>
+            <p className="bio-education-years">{eduUniYears}</p>
             <ul className="bio-education-achievements">
               <p>Exam mark on average: 4,5 / 5</p>
             </ul>
@@ -108,14 +119,17 @@ const Bio = (props) => {
         </div>
 
         <div className="education-card">
-          <div className="education-card-logo">
-            <img src={"../../mag.png"}></img>
+          <div className="education-card-prev hard-centered">
+            <div>
+              <div className="education-card-logo">
+                <img src={"../../mag.png"}></img>
+              </div>
+              <p>asdd</p>
+            </div>
           </div>
           <div className="education-card-info">
-            <p className="bio-education-place">
-              Future magistratura adre modre
-            </p>
-            <p className="bio-education-years">2023 - 2025</p>
+            <p className="bio-education-place">{eduMagTitle}</p>
+            <p className="bio-education-years">{eduMagYears}</p>
           </div>
         </div>
       </div>

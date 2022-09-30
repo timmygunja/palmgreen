@@ -52,7 +52,9 @@ const NavBar = (props) => {
         >
           Me
         </a>
-        <a href={"#"}>Myself</a>
+        <a href={"#"} onClick={props.onClickMyself}>
+          Myself
+        </a>
         <a href={"#"}>&</a>
         <a href={"#"}>i</a>
       </div>
@@ -60,9 +62,9 @@ const NavBar = (props) => {
       {/* <div className={""}></div> */}
 
       <div className={"buttonbar"}>
-        <div class={languageButtonClass} onClick={languageToggler}>
-          <span class="label-up">English</span>
-          <span class="label-up">Русский</span>
+        <div className={languageButtonClass} onClick={languageToggler}>
+          <span className="label-up">English</span>
+          <span className="label-up">Русский</span>
         </div>
         <input type="checkbox" className="themetoggle" onClick={themeToggler} />
       </div>
