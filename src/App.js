@@ -14,23 +14,49 @@ function App() {
   const refI = useRef(null);
 
   const engText = {
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    bioText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     eduTitle: "Education",
+
+    eduSchoolLevel: "mid - high",
     eduSchoolTitle: "School #13",
     eduSchoolYears: "2008 - 2019",
+
+    examLevel: "exams",
+    examMaths: "Maths",
+    examCS: "Computer Science",
+    examEnglish: "English",
+    examRussian: "Russian",
+
+    eduUniLevel: "bachelors",
     eduUniTitle: "Finashka",
     eduUniYears: "2019 - 2023",
+
+    eduMagLevel: "masters",
     eduMagTitle: "Future maga",
     eduMagYears: "2023 - 2025",
   };
 
   const ruText = {
-    bio: "Важно заботиться о пациенте, чтобы за ним следовал клиент, но в то же время он будет страдать от больших болей и страданий. Ибо, говоря в мельчайших подробностях, никто не должен заниматься какой-либо работой, если он не извлечет из нее какой-либо пользы. Не злиться на боль, на выговор в наслаждении, он хочет быть волоском от боли, в надежде, что размножения нет. Если они не ослеплены желанием, они не выходят, виноваты те, кто отказывается от своих обязанностей, душа смягчается, то есть труд. Ибо, говоря в мельчайших подробностях, никто не должен заниматься какой-либо работой, если он не извлечет из нее какой-либо пользы.",
+    bioText:
+      "Важно заботиться о пациенте, чтобы за ним следовал клиент, но в то же время он будет страдать от больших болей и страданий. Ибо, говоря в мельчайших подробностях, никто не должен заниматься какой-либо работой, если он не извлечет из нее какой-либо пользы. Не злиться на боль, на выговор в наслаждении, он хочет быть волоском от боли, в надежде, что размножения нет. Если они не ослеплены желанием, они не выходят, виноваты те, кто отказывается от своих обязанностей, душа смягчается, то есть труд. Ибо, говоря в мельчайших подробностях, никто не должен заниматься какой-либо работой, если он не извлечет из нее какой-либо пользы.",
     eduTitle: "Образование",
+
+    eduSchoolLevel: "среднее",
     eduSchoolTitle: "Гимназия #13",
     eduSchoolYears: "2008 - 2019",
+
+    examLevel: "экзамены",
+    examMaths: "Математика",
+    examCS: "Информатика",
+    examEnglish: "Английский",
+    examRussian: "Русский",
+
+    eduUniLevel: "бакалавриат",
     eduUniTitle: "Финашка",
     eduUniYears: "2019 - 2023",
+
+    eduMagLevel: "магистратура",
     eduMagTitle: "Будущая мага",
     eduMagYears: "2023 - 2025",
   };
@@ -62,10 +88,14 @@ function App() {
       {/* <img scr={"flagusa.png"} style={{ width: "100px", height: "100px" }} /> */}
 
       <Section name={"Bio"}>
-        <Bio ref={refMe} />
+        <Bio ref={refMe} id="bio" />
       </Section>
 
-      <div ref={refMyself}>This text right here</div>
+      <div>
+        <div>
+          <p ref={refMyself}>This text right here</p>
+        </div>
+      </div>
 
       <Section name={"Skills"}>
         <SkillList />

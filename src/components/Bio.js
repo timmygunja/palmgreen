@@ -5,27 +5,24 @@ import ExamChart from "./ExamChart";
 import { useSelector } from "react-redux";
 
 const Bio = (props) => {
-  const bioText = useSelector((state) => state.ui.currentText.bio);
-  const eduTitle = useSelector((state) => state.ui.currentText.eduTitle);
-  const eduSchoolTitle = useSelector(
-    (state) => state.ui.currentText.eduSchoolTitle
-  );
-  const eduSchoolYears = useSelector(
-    (state) => state.ui.currentText.eduSchoolYears
-  );
-  const eduUniTitle = useSelector((state) => state.ui.currentText.eduUniTitle);
-  const eduUniYears = useSelector((state) => state.ui.currentText.eduUniYears);
-  const eduMagTitle = useSelector((state) => state.ui.currentText.eduMagTitle);
-  const eduMagYears = useSelector((state) => state.ui.currentText.eduMagYears);
-
-  // const language = useSelector((state) => state.ui.language);
-  // const bioText = language === "english" ? useSelector((state) => state.ui.language);
-
-  // if (language === "english") {
-  //   bioText = useSelector((state) => state.ui.engText.bio);
-  // } else {
-  //   bioText = useSelector((state) => state.ui.ruText.bio);
-  // }
+  const {
+    bioText,
+    eduTitle,
+    eduSchoolLevel,
+    examLevel,
+    examMaths,
+    examCS,
+    examEnglish,
+    examRussian,
+    eduSchoolTitle,
+    eduSchoolYears,
+    eduUniLevel,
+    eduUniTitle,
+    eduUniYears,
+    eduMagLevel,
+    eduMagTitle,
+    eduMagYears,
+  } = useSelector((state) => state.ui.currentText);
 
   useEffect(() => {
     const block = document.querySelectorAll(".block");
@@ -70,7 +67,7 @@ const Bio = (props) => {
               <div className="education-card-logo">
                 <img src={"../../school.png"}></img>
               </div>
-              <p>mid - high</p>
+              <p>{eduSchoolLevel}</p>
             </div>
           </div>
           <div className="education-card-info">
@@ -89,14 +86,14 @@ const Bio = (props) => {
               <div className="education-card-logo">
                 <img src={"../../exams.png"}></img>
               </div>
-              <p>mid - high</p>
+              <p>{examLevel}</p>
             </div>
           </div>
           <div className="education-card-info">
-            <ExamChart name="Maths" mark="80" />
-            <ExamChart name="Computer Science" mark="83" />
-            <ExamChart name="English" mark="83" />
-            <ExamChart name="Russian" mark="96" />
+            <ExamChart name={examMaths} mark="80" />
+            <ExamChart name={examCS} mark="83" />
+            <ExamChart name={examEnglish} mark="83" />
+            <ExamChart name={examRussian} mark="96" />
           </div>
         </div>
 
@@ -106,7 +103,7 @@ const Bio = (props) => {
               <div className="education-card-logo">
                 <img src={"../../univer.png"}></img>
               </div>
-              <p>asad</p>
+              <p>{eduUniLevel}</p>
             </div>
           </div>
           <div className="education-card-info">
@@ -124,7 +121,7 @@ const Bio = (props) => {
               <div className="education-card-logo">
                 <img src={"../../mag.png"}></img>
               </div>
-              <p>asdd</p>
+              <p>{eduMagLevel}</p>
             </div>
           </div>
           <div className="education-card-info">
