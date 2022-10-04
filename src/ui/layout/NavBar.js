@@ -43,20 +43,10 @@ const NavBar = (props) => {
       </div>
 
       <div className={"mainbar"}>
-        <a
-          href={"#"}
-          // onClick={props.refs.refMe.current?.scrollIntoView({
-          //   behavior: "smooth",
-          // })}
-          onClick={props.onClickMe}
-        >
-          Me
-        </a>
-        <a href={"#"} onClick={props.onClickMyself}>
-          Myself
-        </a>
-        <a href={"#"}>&</a>
-        <a href={"#"}>i</a>
+        <button onClick={props.onClickMe}>Me</button>
+        <button onClick={props.onClickMyself}>Myself</button>
+        <button onClick={props.onClickAnd}>&</button>
+        <button onClick={props.onClickI}>i</button>
       </div>
 
       {/* <div className={""}></div> */}

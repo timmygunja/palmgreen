@@ -62,15 +62,25 @@ function App() {
   };
 
   const onClickMe = () => {
-    console.log(refMe.current);
     refMe.current?.scrollIntoView({
       behavior: "smooth",
     });
   };
 
   const onClickMyself = () => {
-    console.log(refMyself.current);
     refMyself.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const onClickAnd = () => {
+    refAnd.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const onClickI = () => {
+    refI.current?.scrollIntoView({
       behavior: "smooth",
     });
   };
@@ -82,25 +92,23 @@ function App() {
       <NavBar
         onClickMe={onClickMe}
         onClickMyself={onClickMyself}
+        onClickAnd={onClickAnd}
+        onClickI={onClickI}
         sources={{ engText: engText, ruText: ruText }}
       />
 
       {/* <img scr={"flagusa.png"} style={{ width: "100px", height: "100px" }} /> */}
-
+      <div ref={refMe}></div>
       <Section name={"Bio"}>
-        <Bio ref={refMe} id="bio" />
+        <Bio id="bio" refMyself={refMyself} />
       </Section>
 
-      <div>
-        <div>
-          <p ref={refMyself}>This text right here</p>
-        </div>
-      </div>
-
+      <div ref={refAnd}></div>
       <Section name={"Skills"}>
         <SkillList />
       </Section>
 
+      <div ref={refI}></div>
       <Section name={"Recent projects"}>
         <Projects />
       </Section>

@@ -22,6 +22,7 @@ const SkillList = (props) => {
     <div className={"skill-list"}>
       <div className={"skill-titles"}>
         <h3
+          ref={props.refMyself}
           id={"web"}
           onClick={() => {
             hideSkillTable();

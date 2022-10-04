@@ -52,14 +52,20 @@ const Bio = (props) => {
       {/* <BioPng /> */}
       <div className="bio-about">
         {/* <h3 className="bio-title">Junior Frontend Developer</h3> */}
-        <div className="bio-avatar">
-          <img src={"../../face.jpeg"}></img>
+        <h3 className="bio-title">Dev</h3>
+        <div className="hard-centered">
+          <div className="bio-avatar">
+            <img src={"../../face.jpeg"}></img>
+          </div>
         </div>
 
         <div className="bio-text">{bioText}</div>
       </div>
+
       <div className="bio-education">
-        <div className="bio-education-title">{eduTitle}</div>
+        <div className="bio-education-title" ref={props.refMyself}>
+          {eduTitle}
+        </div>
 
         <div className="education-card">
           <div className="education-card-prev hard-centered">
@@ -70,13 +76,15 @@ const Bio = (props) => {
               <p>{eduSchoolLevel}</p>
             </div>
           </div>
-          <div className="education-card-info">
-            <p className="bio-education-place">{eduSchoolTitle}</p>
-            <p className="bio-education-years">{eduSchoolYears}</p>
-            <ul className="bio-education-achievements">
-              <p>Gold medal lol</p>
-              <p>sport spirt</p>
-            </ul>
+          <div className="centered-vertically">
+            <div className="education-card-info">
+              <p className="bio-education-place">{eduSchoolTitle}</p>
+              <p className="bio-education-years">{eduSchoolYears}</p>
+              <ul className="bio-education-achievements">
+                <p>Gold medal lol</p>
+                <p>sport spirt</p>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -89,12 +97,14 @@ const Bio = (props) => {
               <p>{examLevel}</p>
             </div>
           </div>
+          {/* <div className="centered-vertically"> */}
           <div className="education-card-info">
             <ExamChart name={examMaths} mark="80" />
             <ExamChart name={examCS} mark="83" />
             <ExamChart name={examEnglish} mark="83" />
             <ExamChart name={examRussian} mark="96" />
           </div>
+          {/* </div> */}
         </div>
 
         <div className="education-card">
@@ -106,12 +116,14 @@ const Bio = (props) => {
               <p>{eduUniLevel}</p>
             </div>
           </div>
-          <div className="education-card-info">
-            <p className="bio-education-place">{eduUniTitle}</p>
-            <p className="bio-education-years">{eduUniYears}</p>
-            <ul className="bio-education-achievements">
-              <p>Exam mark on average: 4,5 / 5</p>
-            </ul>
+          <div className="centered-vertically">
+            <div className="education-card-info">
+              <p className="bio-education-place">{eduUniTitle}</p>
+              <p className="bio-education-years">{eduUniYears}</p>
+              <ul className="bio-education-achievements">
+                <p>Exam mark on average: 4,5 / 5</p>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -124,9 +136,11 @@ const Bio = (props) => {
               <p>{eduMagLevel}</p>
             </div>
           </div>
-          <div className="education-card-info">
-            <p className="bio-education-place">{eduMagTitle}</p>
-            <p className="bio-education-years">{eduMagYears}</p>
+          <div className="centered-vertically">
+            <div className="education-card-info">
+              <p className="bio-education-place">{eduMagTitle}</p>
+              <p className="bio-education-years">{eduMagYears}</p>
+            </div>
           </div>
         </div>
       </div>

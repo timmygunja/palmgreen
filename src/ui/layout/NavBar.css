@@ -39,16 +39,20 @@
   font-weight: 300;
 }
 
-.mainbar a {
+/* .mainbar a, */
+.mainbar button {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  background-color: inherit;
+  transition: all 0.25s linear;
 }
 
-/* RUDIMENT */
-.mainbar a:hover,
-.mainbar a:focus {
+.mainbar button:hover,
+.mainbar button:focus {
+  cursor: pointer;
   background-color: rgba(245, 245, 245, 0.65);
 }
 
