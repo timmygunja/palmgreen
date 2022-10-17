@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   
   a, 
+  button,
   .logotext, 
   .section-legend,
   .skill-titles {
@@ -26,8 +27,8 @@ const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
 
-  .mainbar a:hover, 
-  .mainbar a:focus,
+  .mainbar button:hover, 
+  .mainbar button:focus,
   .skill-titles h3:hover,
   .skill-titles h3:focus {
     background-color: ${({ theme }) => theme.navLinkHover};
@@ -57,6 +58,11 @@ const GlobalStyles = createGlobalStyle`
   
   g.logoBlend > path {
     stroke: ${({ theme }) => theme.pathStroke};
+  }
+
+  .footer {
+    background-color: ${({ theme }) => theme.footerBackground};
+  }
   `;
 
 export default GlobalStyles;

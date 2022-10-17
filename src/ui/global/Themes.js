@@ -1,3 +1,8 @@
+// const mainDarkColor = "#ff69b4";
+// const secondaryDarkColor = "rgba(255,105,180, 0.7)";
+const mainDarkColor = "rgb(34, 224, 123)";
+const secondaryDarkColor = "rgba(105, 255, 175, 0.7)";
+
 export const lightTheme = {
   body: "#fafafa",
   text: "#000000",
@@ -10,12 +15,9 @@ export const lightTheme = {
   // exam charts
   blendMode: "lighten",
   pathStroke: "black",
-};
 
-// const mainDarkColor = "#ff69b4";
-// const secondaryDarkColor = "rgba(255,105,180, 0.7)";
-const mainDarkColor = "rgb(34, 224, 123)";
-const secondaryDarkColor = "rgba(105, 255, 175, 0.7)";
+  footerBackground: "rgba(0, 0, 0, 0.85)",
+};
 
 export const darkTheme = {
   body: "#313032",
@@ -30,4 +32,6 @@ export const darkTheme = {
   // exam charts
   blendMode: "darken",
   pathStroke: "white",
+
+  footerBackground: "rgba(0, 0, 0, 0.25)",
 };

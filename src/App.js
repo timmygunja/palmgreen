@@ -6,6 +6,7 @@ import Section from "./ui/Section";
 import SkillList from "./components/SkillList";
 import Bio from "./components/Bio";
 import Projects from "./components/Projects";
+import Footer from "./ui/layout/Footer";
 
 function App() {
   const refMe = useRef(null);
@@ -35,6 +36,8 @@ function App() {
     eduMagLevel: "masters",
     eduMagTitle: "Future maga",
     eduMagYears: "2023 - 2025",
+
+    gitLink: "check out github",
   };
 
   const ruText = {
@@ -59,6 +62,8 @@ function App() {
     eduMagLevel: "магистратура",
     eduMagTitle: "Будущая мага",
     eduMagYears: "2023 - 2025",
+
+    gitLink: "перейти на гитхаб",
   };
 
   const onClickMe = () => {
@@ -112,6 +117,8 @@ function App() {
       <Section name={"Recent projects"}>
         <Projects />
       </Section>
+
+      <Footer />
     </div>
   );
 }
