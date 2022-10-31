@@ -21,6 +21,7 @@
 .social-test {
   text-align: center;
   font-size: 30px;
+  display: flex;
 }
 
 .social-test h2 {
@@ -31,11 +32,8 @@
 
 .social-test div {
   color: rgba(255, 255, 255, 0.6);
-  display: inline-block;
   width: 30px;
   height: 30px;
-  line-height: 28px;
-  padding: 1%;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 3px;
   cursor: pointer;

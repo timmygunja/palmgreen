@@ -29,13 +29,13 @@ const Footer = (props) => {
       </div>
       <div className="footer-links hard-centered">
         <div className="social-test">
-          <div onClick={redirectToTg}>
+          <div className="hard-centered" onClick={redirectToTg}>
             <i className="fa fa-telegram" aria-hidden="true"></i>
           </div>
-          <div onClick={redirectToVk}>
+          <div className="hard-centered" onClick={redirectToVk}>
             <i className="fa fa-vk" aria-hidden="true"></i>
           </div>
-          <div onClick={redirectToInsta}>
+          <div className="hard-centered" onClick={redirectToInsta}>
             <i className="fa fa-instagram" aria-hidden="true"></i>
           </div>
         </div>
