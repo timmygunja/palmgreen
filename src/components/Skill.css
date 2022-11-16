@@ -12,6 +12,10 @@
     inset 0 0 4px 1px rgba(135, 135, 135, 0.1);
 }
 
+.skill-name {
+  font-size: 1.3vw;
+}
+
 .skill-bar {
   margin-top: 7px;
   display: flex;
@@ -20,8 +24,10 @@
 
 .skill-point,
 .skill-point-disabled {
-  width: 3px;
-  height: 10px;
+  /* width: 3px; */
+  /* height: 10px; */
+  width: 0.24vw;
+  height: 0.75vw;
   margin: 0 1px;
   padding: 0;
   border-radius: 1px;

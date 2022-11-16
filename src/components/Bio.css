@@ -1,3 +1,17 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  /* color: #333; */
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .bio {
   /* margin: 0; */
 }
@@ -22,20 +36,24 @@
 .bio-avatar {
   grid-area: avatar;
   text-align: center;
-  height: 350px;
+  /* height: 350px; */
   padding: 5%;
 }
 
 .bio-avatar img {
-  height: 100%;
+  /* height: 100%; */
+  width: 80%;
 }
 
 .bio-text {
   grid-area: text;
   padding: 5%;
   height: fit-content;
-  font-size: 26px;
-  font-weight: 200;
+  /* font-size: 26px; */
+  /* font-weight: 200; */
+
+  font-size: clamp(0.9rem, 1.75vw, 1.5rem);
+  /* font-size: clamp(0.6rem, 26px, 30px); */
 }
 
 .bio-education {
@@ -98,8 +116,13 @@
   grid-area: info;
 }
 
+.exams {
+  min-height: 40vh;
+}
+
 .exams > .education-card-info {
-  padding: 20px 10%;
+  padding: 5px 0;
+  /* margin: 5% 0; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -111,69 +134,14 @@
   text-align: center;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  /* color: #333; */
-  list-style-type: none;
-  text-decoration: none;
+/* @media screen and (min-width: 900px) and (max-width: 1600px) {
+  * {
+    color: red;
+  }
 }
 
-.block {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  /* fill: purple; */
-}
-
-.box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: calc(100% - 50px);
-  height: calc(100% - 50px);
-  border-radius: 50%;
-  /* background-color: #292929; */
-  /* box-shadow: 0 0 5px 3px #222121; */
-
-  z-index: 10;
-}
-
-.box::before {
-  position: absolute;
-  content: "";
-  width: calc(100% + 28px);
-  height: calc(100% + 28px);
-  border-radius: 50%;
-  /* border: 1px solid #353535; */
-}
-
-.box .number span {
-  /* color: #e9e9e9; */
-}
-
-.box .number .num {
-  font-size: 30px;
-  /* font-weight: bold; */
-  font-weight: 500;
-}
-
-.box .number {
-  font-size: 20px;
-}
-
-.box .title {
-  font-size: 15px;
-  /* color: #9b9b9b; */
-}
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  * {
+    color: blueviolet;
+  }
+} */

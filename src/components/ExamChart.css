@@ -1,3 +1,63 @@
+.block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 180px;
+  height: 180px; */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* fill: purple; */
+  margin: 10px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  border-radius: 50%;
+  /* background-color: #292929; */
+  /* box-shadow: 0 0 5px 3px #222121; */
+
+  z-index: 10;
+}
+
+.box::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 28px);
+  height: calc(100% + 28px);
+  border-radius: 50%;
+  /* border: 1px solid #353535; */
+}
+
+.box .number span {
+  /* color: #e9e9e9; */
+}
+
+.box .number .num {
+  /* font-size: 30px; */
+  font-size: 2.5vw;
+  /* font-weight: bold; */
+  font-weight: 400;
+}
+
+/* .box .number {
+  font-size: 20px;
+} */
+
+.box .title {
+  /* font-size: 15px; */
+  font-size: 1vw;
+  text-align: center;
+  /* color: #9b9b9b; */
+}
+
 .svg {
   position: absolute;
   width: 100%;
