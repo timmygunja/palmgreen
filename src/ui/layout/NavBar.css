@@ -39,6 +39,12 @@
   font-weight: 300;
 }
 
+@media screen and (max-width: 800px) {
+  .mainbar {
+    display: none;
+  }
+}
+
 /* .mainbar a, */
 .mainbar button {
   text-align: center;

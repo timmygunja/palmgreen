@@ -11,7 +11,6 @@
 
 .footer-content {
   padding: 40px;
-  margin: 30px;
 }
 
 .footer-links {
@@ -20,7 +19,7 @@
 
 .social-test {
   text-align: center;
-  font-size: 30px;
+  /* font-size: 30px; */
   display: flex;
 }
 
@@ -56,4 +55,20 @@
 
 .social:hover > div:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-content {
+    padding: 5px;
+  }
+
+  .social-test div {
+    color: rgba(255, 255, 255, 0.6);
+    width: 20px;
+    height: 20px;
+  }
+  
+  .social-test i {
+    transform: scale(0.45);
+  }
 }
