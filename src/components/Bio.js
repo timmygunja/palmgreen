@@ -23,44 +23,74 @@ const Bio = (props) => {
     eduMagTitle,
     eduMagYears,
   } = useSelector((state) => state.ui.currentText);
+  const marks = [80, 83, 83, 96];
 
-  useEffect(() => {
+  const animateExams = (mode) => {
     const block = document.querySelectorAll(".block");
+    let markCount = 0;
     block.forEach((item) => {
       let numElement = item.querySelector(".num");
-      let num = parseInt(numElement.innerText);
-      let count = 0;
+      let num = marks[markCount];
       let time = 2000 / num;
+      let count;
 
       let pathElement = item.querySelector(".logoBlendPath");
 
-      setInterval(() => {
-        if (count == num) {
-          clearInterval();
-        } else {
-          count += 1;
-          numElement.innerText = count;
-        }
-      }, time);
+      if (mode === "forward" || mode === undefined) {
+        count = 0;
 
-      pathElement.style.strokeDashoffset = 430 - 360 * (num / 100);
+        setInterval(() => {
+          if (count == num) {
+            clearInterval();
+          } else {
+            count += 1;
+            numElement.innerText = count;
+          }
+        }, time);
+
+        pathElement.style.strokeDashoffset = 430 - 360 * (num / 100);
+      } else if (mode === "backward") {
+        count = num;
+
+        setInterval(() => {
+          if (count == 0) {
+            clearInterval();
+          } else {
+            count -= 1;
+            numElement.innerText = count;
+          }
+        }, time);
+
+        pathElement.style.strokeDashoffset = 360;
+      }
+
+      markCount += 1;
     });
+  };
+
+  const playAnim = () => {
+    animateExams("backward");
+    setTimeout(animateExams, 2300);
+  };
+
+  useEffect(() => {
+    animateExams();
   });
 
   return (
     <div className={"bio"}>
-      {/* <BioPng /> */}
       <div className="bio-about">
         {/* <h3 className="bio-title">Junior Frontend Developer</h3> */}
-        <h3 className="bio-title">Dev</h3>
+        <div className="bio-title">Dev</div>
         <div className="hard-centered">
           <div className="bio-avatar">
             <img src={"../../face.jpeg"}></img>
           </div>
         </div>
-
         <div className="bio-text">{bioText}</div>
       </div>
+
+      {/* <BioPng /> */}
 
       <div className="bio-education">
         <div className="bio-education-title" ref={props.refMyself}>
@@ -88,7 +118,7 @@ const Bio = (props) => {
           </div>
         </div>
 
-        <div className="education-card exams">
+        <div className="education-card exams" onClick={playAnim}>
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
@@ -99,10 +129,10 @@ const Bio = (props) => {
           </div>
           {/* <div className="centered-vertically"> */}
           <div className="education-card-info">
-            <ExamChart name={examMaths} mark="80" />
-            <ExamChart name={examCS} mark="83" />
-            <ExamChart name={examEnglish} mark="83" />
-            <ExamChart name={examRussian} mark="96" />
+            <ExamChart name={examMaths} mark={marks[0]} />
+            <ExamChart name={examCS} mark={marks[1]} />
+            <ExamChart name={examEnglish} mark={marks[2]} />
+            <ExamChart name={examRussian} mark={marks[3]} />
           </div>
           {/* </div> */}
         </div>

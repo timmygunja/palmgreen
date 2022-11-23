@@ -17,8 +17,8 @@
 
 .bio-about {
   display: grid;
-  margin: 40px 0;
-  grid-gap: 40px 0;
+  margin: 20px 0;
+  grid-gap: 20px 0;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "title title title"
@@ -28,8 +28,9 @@
 .bio-title {
   grid-area: title;
   text-align: center;
-  font-size: 36px;
-  font-weight: 300;
+  /* font-size: 36px; */
+  font-size: clamp(1rem, 2.8vw, 2.8rem);
+  font-weight: 400;
 }
 
 .bio-avatar {
@@ -63,9 +64,11 @@
 
 .bio-education-title {
   text-align: center;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 30px;
+  /* font-size: 30px; */
+  font-size: clamp(1rem, 2.8vw, 2.8rem);
+  font-weight: 400;
+  /* margin-bottom: 30px; */
+  margin-bottom: 4vw;
 }
 
 .education-card {
@@ -97,7 +100,8 @@
 }
 
 .education-card-prev p {
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: clamp(0.20rem, 1.2vw, 1.1rem);
   font-weight: 400;
   color: gray;
 }
@@ -110,24 +114,40 @@
 }
 
 .education-card-logo img {
-  width: 100%;
+  /* width: 100%; */
+  width: 5vw;
 }
 
 .education-card-info {
   grid-area: info;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-areas: "main secondary"; */
 }
 
 .bio-education-place,
 .bio-education-years {
-  font-size: 2vw;
+  grid-area: main;
+  font-size: 1.8vw;
+  margin: 2px 0;
+}
+
+.bio-education-achievements {
+  grid-area: secondary;
+  display: flex;
+  gap: 15px;
+  opacity: 0.7;
+  color: darkgoldenrod;
 }
 
 .bio-education-achievements p {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
+  /* margin-right: 15px; */
 }
 
 .exams {
   min-height: 40vh;
+  min-height: min(40vh, 25vw);
 }
 
 .exams > .education-card-info {
@@ -143,15 +163,3 @@
   /* justify-content: center; */
   text-align: center;
 }
-
-/* @media screen and (min-width: 900px) and (max-width: 1600px) {
-  * {
-    color: red;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 900px) {
-  * {
-    color: blueviolet;
-  }
-} */

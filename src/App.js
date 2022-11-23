@@ -91,34 +91,36 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {/* <header className="App-header"> */}
-      {/* </header> */}
-      <NavBar
-        onClickMe={onClickMe}
-        onClickMyself={onClickMyself}
-        onClickAnd={onClickAnd}
-        onClickI={onClickI}
-        sources={{ engText: engText, ruText: ruText }}
-      />
+    <div className="root hard-centered">
+      <div className="App">
+        {/* <header className="App-header"> */}
+        {/* </header> */}
+        <NavBar
+          onClickMe={onClickMe}
+          onClickMyself={onClickMyself}
+          onClickAnd={onClickAnd}
+          onClickI={onClickI}
+          sources={{ engText: engText, ruText: ruText }}
+        />
 
-      {/* <img scr={"flagusa.png"} style={{ width: "100px", height: "100px" }} /> */}
-      <div ref={refMe}></div>
-      <Section name={"Bio"}>
-        <Bio id="bio" refMyself={refMyself} />
-      </Section>
+        {/* <img scr={"flagusa.png"} style={{ width: "100px", height: "100px" }} /> */}
+        <div ref={refMe}></div>
+        <Section name={"Bio"}>
+          <Bio id="bio" refMyself={refMyself} />
+        </Section>
 
-      <div ref={refAnd}></div>
-      <Section name={"Skills"}>
-        <SkillList />
-      </Section>
+        <div ref={refAnd}></div>
+        <Section name={"Skills"}>
+          <SkillList />
+        </Section>
 
-      <div ref={refI}></div>
-      <Section name={"Recent projects"}>
-        <Projects />
-      </Section>
+        <div ref={refI}></div>
+        <Section name={"Recent projects"}>
+          <Projects />
+        </Section>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
