@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = (props) => {
   const { gitLink } = useSelector((state) => state.ui.currentText);
 
-  const telegramLink = "https://t.me/timmygunjaa";
+  const telegramLink = "https://t.me/timmygunja";
   const vkLink = "https://vk.com/timmygunja";
   const instaLink = "https://instagram.com/timmygunja_";
   const githubLink = "https://github.com/timmygunja";
