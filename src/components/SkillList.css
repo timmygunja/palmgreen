@@ -18,8 +18,23 @@
   opacity: 0.8;
   font-weight: 500;
   /* font-size: 22px; */
-  font-size: 1.7vw;
+  /* font-size: 1.7vw; */
+  font-size: var(--h8-font-size);
   border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+  .skill-list {
+    margin: 10px 8%;
+  }
+
+  .skill-titles h3 {
+    height: 5vw;
+    line-height: 5vw;
+    font-weight: 500;
+    font-size: var(--h9-font-size);
+    
+  }
 }
 
 .skill-titles h3:hover {

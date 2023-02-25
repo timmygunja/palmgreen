@@ -42,7 +42,8 @@
 
 .box .number .num {
   /* font-size: 30px; */
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
+  font-size: var(--exam-num);
   /* font-weight: bold; */
   font-weight: 400;
 }
@@ -53,7 +54,8 @@
 
 .box .title {
   /* font-size: 15px; */
-  font-size: 1vw;
+  /* font-size: 1vw; */
+  font-size: var(--exam-text);
   text-align: center;
   /* color: #9b9b9b; */
 }

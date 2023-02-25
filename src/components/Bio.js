@@ -83,7 +83,7 @@ const Bio = (props) => {
         {/* <h3 className="bio-title">Junior Frontend Developer</h3> */}
         <div className="bio-title">Dev</div>
         <div className="hard-centered">
-          <div className="bio-avatar">
+          <div className="bio-avatar hard-centered">
             <img src={"../../face.jpeg"}></img>
           </div>
         </div>

@@ -48,7 +48,7 @@ const Projects = (props) => {
         </div>
         <div className="centered-vertically">
           <div className="project-card-info">
-            <p>Simple Fullstack E-Commerce Website Application</p>
+            <p>Simple Fullstack E-Commerce Website</p>
             <p>MongoDB Express React NodeJS</p>
             <p>
               <a

@@ -1,6 +1,8 @@
 .project-card {
-  margin: 10px 30px;
-  padding: 20px 30px;
+  /* margin: 10px 30px; */
+  /* padding: 20px 30px; */
+  margin: 0 1rem;
+  padding: 1rem 1.5rem;
   border: 2px solid rgba(107, 106, 106, 0.4);
   border-radius: 10px;
   box-shadow: 0 0 5px 2px rgba(135, 135, 135, 0.3);
@@ -9,7 +11,8 @@
   display: grid;
   grid-template-columns: 1fr 10fr;
   grid-template-areas: "prev info";
-  grid-gap: 0 30px;
+  /* grid-gap: 0 30px; */
+  grid-gap: 0 1.5rem;
 }
 
 .project-card:hover {
@@ -43,6 +46,7 @@
   grid-area: info;
   display: grid;
   grid-gap: 2px 0;
+  font-size: var(--h6-font-size);
 }
 
 .project-link {

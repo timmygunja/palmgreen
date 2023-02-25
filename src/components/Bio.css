@@ -5,15 +5,16 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: var(--h9-font-size);
   /* color: #333; */
   list-style-type: none;
   text-decoration: none;
 }
 
-.bio {
-  /* margin: 0; */
-}
+/* .bio {
+  margin: 0;
+} */
 
 .bio-about {
   display: grid;
@@ -29,15 +30,16 @@
   grid-area: title;
   text-align: center;
   /* font-size: 36px; */
-  font-size: clamp(1rem, 2.8vw, 2.8rem);
+  /* font-size: clamp(1rem, 2.8vw, 2.8rem); */
+  font-size: var(--h3-font-size);
   font-weight: 400;
 }
 
 .bio-avatar {
   grid-area: avatar;
-  text-align: center;
+  /* text-align: center; */
   /* height: 350px; */
-  padding: 5%;
+  /* padding: 5%; */
 }
 
 .bio-avatar img {
@@ -51,47 +53,74 @@
   /* height: fit-content; */
   /* font-size: 26px; */
   /* font-weight: 200; */
-  font-size: clamp(0.35rem, 1.7vw, 1.5rem);
+  /* font-size: clamp(0.35rem, 1.7vw, 1.5rem); */
+  font-size: var(--h8-font-size);
+}
+
+@media screen and (max-width: 600px) {
+  .bio-about {
+    margin: 0;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "avatar"
+      "text";
+  }
+
+  .bio-avatar img {
+    /* height: 100%; */
+    width: 25%;
+  }
+
+  .bio-text {
+    padding: 3% 10%;
+    font-size: var(--h10-font-size);
+  }
 }
 
 .bio-education {
-  margin: 60px 0 20px;
-  font-size: 22px;
-  font-weight: 300;
+  /* margin: 60px 0 20px; */
+  margin: 2rem 0 1.5rem;
+  /* font-size: 22px; */
+  /* font-weight: 300; */
   display: grid;
-  grid-gap: 20px 0;
+  /* grid-gap: 20px 0; */
+  grid-gap: 1.4rem 0;
 }
 
 .bio-education-title {
   text-align: center;
   /* font-size: 30px; */
-  font-size: clamp(1rem, 2.8vw, 2.8rem);
-  font-weight: 400;
+  /* font-size: clamp(1rem, 2.8vw, 2.8rem); */
+  font-size: var(--h3-font-size);
+  /* font-weight: 400; */
   /* margin-bottom: 30px; */
-  margin-bottom: 4vw;
+  /* margin-bottom: 1rem; */
 }
 
 .education-card {
-  margin: 0 20px;
-  padding: 20px 30px;
-  border: 2px solid rgba(135, 135, 135, 0.5);
+  /* margin: 0 20px; */
+  margin: 0 1rem;
+  /* padding: 20px 30px; */
+  padding: 1rem 1.5rem;
+  border: 2px solid rgba(107, 106, 106, 0.4);
   border-radius: 10px;
   box-shadow: 0 0 5px 2px rgba(135, 135, 135, 0.3);
   transition: all 300ms ease-out;
+
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-areas: "prev info";
+  /* grid-gap: 0 30px; */
+  grid-gap: 0 1.5rem;
 }
 
 .education-card:hover {
   cursor: pointer;
   transform: scale(1.01);
-  box-shadow: 0 0 9px 5px rgba(135, 135, 135, 0.5),
+  box-shadow: 0 0 7px 4px rgba(135, 135, 135, 0.3),
     inset 0 0 5px 2px rgba(135, 135, 135, 0.1);
-}
-
-.education-card {
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  grid-template-areas: "prev info";
-  grid-gap: 0 30px;
 }
 
 .education-card-prev {
@@ -101,8 +130,9 @@
 
 .education-card-prev p {
   /* font-size: 14px; */
-  font-size: clamp(0.20rem, 1.2vw, 1.1rem);
-  font-weight: 400;
+  /* font-size: clamp(0.2rem, 1.2vw, 1.1rem); */
+  font-size: var(--h11-font-size);
+  /* font-weight: 400; */
   color: gray;
 }
 
@@ -115,7 +145,8 @@
 
 .education-card-logo img {
   /* width: 100%; */
-  width: 5vw;
+  /* width: 5vw; */
+  width: 100%;
 }
 
 .education-card-info {
@@ -128,7 +159,8 @@
 .bio-education-place,
 .bio-education-years {
   grid-area: main;
-  font-size: 1.8vw;
+  /* font-size: 1.8vw; */
+  font-size: var(--h9-font-size);
   margin: 2px 0;
 }
 
@@ -141,13 +173,14 @@
 }
 
 .bio-education-achievements p {
-  font-size: 1.3vw;
+  /* font-size: 1.3vw; */
+  font-size: var(--h11-font-size);
   /* margin-right: 15px; */
 }
 
 .exams {
-  min-height: 40vh;
-  min-height: min(40vh, 25vw);
+  /* min-height: 40vh; */
+  min-height: min(40vh, 40vw);
 }
 
 .exams > .education-card-info {
@@ -156,6 +189,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+/* @media screen and (max-width: 600px) {
+  .exams > .education-card-info {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
 
 .exam {
   /* display: flex; */
