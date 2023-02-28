@@ -56,7 +56,18 @@ const NavBar = (props) => {
           <span className="label-up">English</span>
           <span className="label-up">Русский</span>
         </div>
-        <input type="checkbox" className="themetoggle" onClick={themeToggler} />
+
+        {/* <input type="checkbox" className="themetoggle" onClick={themeToggler} /> */}
+
+        {/* <label className="themetoggle">
+          <input type="checkbox" value="a" onClick={themeToggler} />
+          <span></span>
+        </label> */}
+
+        <div className="themetoggle">
+          <input type="checkbox" id="check" onClick={themeToggler} />
+          <label for="check"></label>
+        </div>
       </div>
     </div>
   );

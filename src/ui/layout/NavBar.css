@@ -74,7 +74,7 @@
   box-sizing: border-box;
 }
 
-.themetoggle {
+/* .themetoggle {
   height: 32px;
   width: 52px;
   border-radius: 16px;
@@ -95,10 +95,6 @@
   cursor: pointer;
 }
 
-/* .themetoggle:focus {
-  outline: 0;
-} */
-
 .themetoggle:after {
   content: "";
   position: absolute;
@@ -113,12 +109,62 @@
 }
 
 .themetoggle:checked {
-  /* border-color: #ff69b4; */
   background: rgb(41, 72, 117);
-  /* color: rgb(34, 224, 123); */
 }
 
 .themetoggle:checked:after {
+  transform: translatex(20px);
+  background: #f0f0f0;
+  box-shadow: inset 0 0 10px 5px honeydew, -2px 2px 2px rgba(44, 44, 44, 0.5);
+} */
+
+.themetoggle {
+  height: 32px;
+  width: 52px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid gray;
+  background: rgb(84, 150, 240);
+  transition: all 0.2s ease;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.themetoggle label {
+  /* content: ""; */
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: inset 0 0 15px 5px yellow, 2px 2px 2px rgba(44, 44, 44, 0.4);
+  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+
+.themetoggle input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.themetoggle:hover,
+.themetoggle label:hover,
+.themetoggle input:hover {
+  cursor: pointer;
+}
+
+.themetoggle input[type="checkbox"]:checked + .themetoggle {
+  background: rgb(41, 72, 117);
+}
+
+.themetoggle input[type="checkbox"]:checked + label {
   transform: translatex(20px);
   background: #f0f0f0;
   box-shadow: inset 0 0 10px 5px honeydew, -2px 2px 2px rgba(44, 44, 44, 0.5);
