@@ -10,8 +10,12 @@ import { uiActions } from "../../store/ui-slice";
 
 const NavBar = (props) => {
   const [theme, setTheme] = useState("light");
+  const [themeClass, setThemeClass] = useState("themetoggle");
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
+    themeClass === "themetoggle"
+      ? setThemeClass("themetoggle switched")
+      : setThemeClass("themetoggle");
   };
 
   const language = useSelector((state) => state.ui.language);
@@ -64,7 +68,7 @@ const NavBar = (props) => {
           <span></span>
         </label> */}
 
-        <div className="themetoggle">
+        <div className={themeClass}>
           <input type="checkbox" id="check" onClick={themeToggler} />
           <label for="check"></label>
         </div>

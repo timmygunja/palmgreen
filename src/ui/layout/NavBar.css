@@ -135,6 +135,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.switched {
+  background: rgb(41, 72, 117);
+}
+
 .themetoggle label {
   /* content: ""; */
   position: absolute;
@@ -158,10 +162,6 @@
 .themetoggle label:hover,
 .themetoggle input:hover {
   cursor: pointer;
-}
-
-.themetoggle input[type="checkbox"]:checked + .themetoggle {
-  background: rgb(41, 72, 117);
 }
 
 .themetoggle input[type="checkbox"]:checked + label {
