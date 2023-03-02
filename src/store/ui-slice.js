@@ -6,8 +6,9 @@ const engText = {
   eduTitle: "Education",
 
   eduSchoolLevel: "mid - high",
-  eduSchoolTitle: "School #13",
-  eduSchoolYears: "2008 - 2019",
+  eduSchoolTitle: "MTEI Gymnasium #13",
+  eduSchoolYears: "Nalchik 2008 - 2019",
+  eduSchoolAchievement: "Gold medal",
 
   examLevel: "exams",
   examMaths: "Maths",
@@ -16,12 +17,18 @@ const engText = {
   examRussian: "Russian",
 
   eduUniLevel: "bachelors",
-  eduUniTitle: "Finashka",
-  eduUniYears: "2019 - 2023",
+  eduUniTitle:
+    "Financial University under the Government of Russian Federation",
+  eduUniYears: "Moscow 2019 - 2023",
+  eduUniAchievement: "Exam mark on average: 4,7 / 5",
 
   eduMagLevel: "masters",
-  eduMagTitle: "Future maga",
+  eduMagTitle: "Future masters degree",
   eduMagYears: "2023 - 2025",
+
+  mernProjectTitle: "Simple Fullstack E-Commerce Website",
+  mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
+  mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
 
   gitLink: "check out github",
 };

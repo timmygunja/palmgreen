@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
 import "./Projects.css";
 
 const cheerio = require("cheerio");
@@ -31,6 +32,10 @@ const Projects = (props) => {
   //   }
   // }, []);
 
+  const { mernProjectTitle, mernProjectFront, mernProjectBack } = useSelector(
+    (state) => state.ui.currentText
+  );
+
   return (
     <div className={"projects"}>
       <a
@@ -48,7 +53,7 @@ const Projects = (props) => {
         </div>
         <div className="centered-vertically">
           <div className="project-card-info">
-            <p>Simple Fullstack E-Commerce Website</p>
+            <p>{mernProjectTitle}</p>
             <p>MongoDB Express React NodeJS</p>
             <p>
               <a
@@ -56,7 +61,7 @@ const Projects = (props) => {
                 target="_blank"
                 className="project-link"
               >
-                Frontend: 24 folders / 82 files / 4442 code lines
+                {mernProjectFront}
               </a>
             </p>
             <p>
@@ -65,7 +70,7 @@ const Projects = (props) => {
                 target="_blank"
                 className="project-link"
               >
-                Backend: 7 folders / 17 files / 934 code lines
+                {mernProjectBack}
               </a>
             </p>
           </div>

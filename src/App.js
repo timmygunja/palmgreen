@@ -20,8 +20,9 @@ function App() {
     eduTitle: "Education",
 
     eduSchoolLevel: "mid - high",
-    eduSchoolTitle: "School #13",
-    eduSchoolYears: "2008 - 2019",
+    eduSchoolTitle: "MTEI Gymnasium #13",
+    eduSchoolYears: "Nalchik 2008 - 2019",
+    eduSchoolAchievement: "Gold medal",
 
     examLevel: "exams",
     examMaths: "Maths",
@@ -30,12 +31,18 @@ function App() {
     examRussian: "Russian",
 
     eduUniLevel: "bachelors",
-    eduUniTitle: "Finashka",
-    eduUniYears: "2019 - 2023",
+    eduUniTitle:
+      "Financial University under the Government of Russian Federation",
+    eduUniYears: "Moscow 2019 - 2023",
+    eduUniAchievement: "Exam mark on average: 4,7 / 5",
 
     eduMagLevel: "masters",
-    eduMagTitle: "Future maga",
+    eduMagTitle: "Future masters degree",
     eduMagYears: "2023 - 2025",
+
+    mernProjectTitle: "Simple Fullstack E-Commerce Website",
+    mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
+    mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
 
     gitLink: "check out github",
   };
@@ -46,8 +53,9 @@ function App() {
     eduTitle: "Образование",
 
     eduSchoolLevel: "среднее",
-    eduSchoolTitle: "Гимназия #13",
-    eduSchoolYears: "2008 - 2019",
+    eduSchoolTitle: "МКОУ Гимназия #13",
+    eduSchoolYears: "Нальчик 2008 - 2019",
+    eduSchoolAchievement: "Золотая медаль",
 
     examLevel: "экзамены",
     examMaths: "Математика",
@@ -56,12 +64,18 @@ function App() {
     examRussian: "Русский",
 
     eduUniLevel: "бакалавриат",
-    eduUniTitle: "Финашка",
-    eduUniYears: "2019 - 2023",
+    eduUniTitle:
+      "Финансовый Университет при Правительстве Российской Федерации",
+    eduUniYears: "Москва 2019 - 2023",
+    eduUniAchievement: "Среднеэкзаменационная оценка: 4,7 / 5",
 
     eduMagLevel: "магистратура",
-    eduMagTitle: "Будущая мага",
+    eduMagTitle: "Будущая магистратура",
     eduMagYears: "2023 - 2025",
+
+    mernProjectTitle: "Простой фуллстэк интернет-магазин",
+    mernProjectFront: "Фронт: 24 папки / 82 файла / 4442 строки кода",
+    mernProjectBack: "Бэк: 7 папки / 17 файла / 934 строки кода",
 
     gitLink: "перейти на гитхаб",
   };

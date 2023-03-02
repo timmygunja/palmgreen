@@ -16,9 +16,11 @@ const Bio = (props) => {
     examRussian,
     eduSchoolTitle,
     eduSchoolYears,
+    eduSchoolAchievement,
     eduUniLevel,
     eduUniTitle,
     eduUniYears,
+    eduUniAchievement,
     eduMagLevel,
     eduMagTitle,
     eduMagYears,
@@ -97,7 +99,11 @@ const Bio = (props) => {
           {eduTitle}
         </div>
 
-        <div className="education-card">
+        <a
+          className="education-card"
+          href="https://almamater13.ru"
+          target="_blank"
+        >
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
@@ -110,13 +116,12 @@ const Bio = (props) => {
             <div className="education-card-info">
               <p className="bio-education-place">{eduSchoolTitle}</p>
               <p className="bio-education-years">{eduSchoolYears}</p>
-              <ul className="bio-education-achievements">
-                <p>Gold medal lol</p>
-                <p>sport spirt</p>
-              </ul>
+              <div className="bio-education-achievements">
+                <p>{eduSchoolAchievement}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
 
         <div className="education-card exams" onClick={playAnim}>
           <div className="education-card-prev hard-centered">
@@ -137,7 +142,11 @@ const Bio = (props) => {
           {/* </div> */}
         </div>
 
-        <div className="education-card">
+        <a
+          className="education-card"
+          href="http://www.fa.ru/Pages/Home.aspx"
+          target="_blank"
+        >
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
@@ -151,11 +160,11 @@ const Bio = (props) => {
               <p className="bio-education-place">{eduUniTitle}</p>
               <p className="bio-education-years">{eduUniYears}</p>
               <ul className="bio-education-achievements">
-                <p>Exam mark on average: 4,5 / 5</p>
+                <p>{eduUniAchievement}</p>
               </ul>
             </div>
           </div>
-        </div>
+        </a>
 
         <div className="education-card">
           <div className="education-card-prev hard-centered">
