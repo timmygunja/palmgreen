@@ -40,7 +40,7 @@ const NavBar = (props) => {
       </ThemeProvider>
 
       <div className={"logo"}>
-        <div>
+        <div className="hard-centered">
           <img className={"logopic"} src={"favicon.png"} />
         </div>
         <div className={"logotext"}>PalmGreen</div>

@@ -1,6 +1,7 @@
 .footer {
   /* min-height: 300px; */
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-top: 2rem;
   /* background-color: rgba(0, 0, 0, 0.85); */
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
@@ -58,17 +59,21 @@
 }
 
 @media screen and (max-width: 900px) {
+  .footer {
+    grid-template-rows: 3fr 1fr;
+  }
+
   .footer-content {
     padding: 5px;
   }
 
   .social-test div {
     color: rgba(255, 255, 255, 0.6);
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
-  
+
   .social-test i {
-    transform: scale(0.45);
+    transform: scale(0.7);
   }
 }

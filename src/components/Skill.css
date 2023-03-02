@@ -37,6 +37,10 @@
 }
 
 @media screen and (max-width: 800px) {
+  .skill {
+    padding: 0.85rem 0.6rem;
+  }
+
   .skill-point,
   .skill-point-disabled {
     width: 0.4vw;
@@ -47,7 +51,7 @@
 @media screen and (max-width: 600px) {
   .skill-point,
   .skill-point-disabled {
-    width: 0.48vw;
+    width: 0.37vw;
     height: 1.7vw;
   }
 }

@@ -30,7 +30,7 @@
 @media screen and (max-width: 800px) {
   .table,
   .table-active {
-    margin: 1rem 5%;
+    margin: 1rem 1%;
     grid-gap: 4% 2%;
   }
 }
