@@ -163,7 +163,8 @@
   grid-area: main;
   /* font-size: 1.8vw; */
   font-size: var(--h9-font-size);
-  margin: 2px 0;
+  /* margin: 2px 0; */
+  margin: 0.05rem 0;
 }
 
 .bio-education-achievements {

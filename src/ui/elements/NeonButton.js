@@ -6,6 +6,7 @@ const NeonButton = (props) => {
       className={classes.button}
       onClick={props.onClick}
       href={props.href}
+      target="_blank"
       disabled={props.disabled}
     >
       {props.children}

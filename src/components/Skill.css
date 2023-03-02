@@ -43,16 +43,18 @@
 
   .skill-point,
   .skill-point-disabled {
-    width: 0.4vw;
+    width: 0.44vw;
     height: 1.35vw;
+    margin: 0 0.7px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .skill-point,
   .skill-point-disabled {
-    width: 0.37vw;
+    width: 0.47vw;
     height: 1.7vw;
+    margin: 0 0.5px;
   }
 }
 
