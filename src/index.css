@@ -27,7 +27,7 @@ code {
   --h12-font-size: calc(5px + 0.3vw);
 
   --exam-num: calc(16px + 1vw);
-  --exam-text: calc(6px + 0.4vw);
+  --exam-text: calc(7px + 0.45vw);
 }
 
 @media screen and (max-width: 500px) {
@@ -46,6 +46,6 @@ code {
     --h12-font-size: calc(1px + 1.05vw);
 
     --exam-num: calc(9px + 1.3vw);
-    --exam-text: calc(1px + 1.1vw);
+    --exam-text: calc(2px + 1vw);
   }
 }

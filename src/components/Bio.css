@@ -33,7 +33,7 @@
   text-align: center;
   /* font-size: 36px; */
   /* font-size: clamp(1rem, 2.8vw, 2.8rem); */
-  font-size: var(--h3-font-size);
+  font-size: var(--h5-font-size);
   font-weight: 400;
 }
 
@@ -57,6 +57,9 @@
   /* font-weight: 200; */
   /* font-size: clamp(0.35rem, 1.7vw, 1.5rem); */
   font-size: var(--h8-font-size);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -95,7 +98,7 @@
   text-align: center;
   /* font-size: 30px; */
   /* font-size: clamp(1rem, 2.8vw, 2.8rem); */
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
   /* font-weight: 400; */
   /* margin-bottom: 30px; */
   /* margin-bottom: 1rem; */
@@ -106,9 +109,9 @@
   margin: 0 1rem;
   /* padding: 20px 30px; */
   padding: 1rem 1.25rem;
-  border: 2px solid rgba(107, 106, 106, 0.4);
+  border: 2px solid rgba(80, 80, 80, 0.4);
   border-radius: 10px;
-  box-shadow: 0 0 5px 2px rgba(135, 135, 135, 0.3);
+  box-shadow: 0 0 5px 2px rgba(100, 100, 100, 0.3);
   transition: all 300ms ease-out;
 
   display: grid;
@@ -121,8 +124,8 @@
 .education-card:hover {
   cursor: pointer;
   transform: scale(1.01);
-  box-shadow: 0 0 7px 4px rgba(135, 135, 135, 0.3),
-    inset 0 0 5px 2px rgba(135, 135, 135, 0.1);
+  box-shadow: 0 0 7px 4px rgba(115, 115, 115, 0.3),
+    inset 0 0 5px 2px rgba(115, 115, 115, 0.1);
 }
 
 .education-card-prev {
@@ -172,7 +175,7 @@
   display: flex;
   /* gap: 15px; */
   opacity: 0.7;
-  color: darkgoldenrod;
+  color: rgb(186, 133, 0);
 }
 
 .bio-education-achievements p {

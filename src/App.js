@@ -16,7 +16,7 @@ function App() {
 
   const engText = {
     bioText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am 21. I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries of these languages. This is my third year of programming so far and I have experience mostly in the fields of backend, front, applied solutions and machine learning / big data fields. Currently I am attaining professional skills in developing user interfaces on Web and actively looking for a mathcing working position. This adaptive page was created by me and further you can get acquainted with the stages of my education, achievements, skills and links to some of my projects!",
     eduTitle: "Education",
 
     eduSchoolLevel: "mid - high",
@@ -49,7 +49,7 @@ function App() {
 
   const ruText = {
     bioText:
-      "Важно заботиться о пациенте, чтобы за ним следовал клиент, но в то же время он будет страдать от больших болей и страданий. Ибо, говоря в мельчайших подробностях, никто не должен заниматься какой-либо работой, если он не извлечет из нее какой-либо пользы. Не злиться на боль, на выговор в наслаждении, он хочет быть волоском от боли, в надежде, что размножения нет. Если они не ослеплены желанием, они не выходят, виноваты те, кто отказывается от своих обязанностей, душа смягчается, то есть труд. Ибо, говоря в мельчайших подробностях, никто не должен заниматься какой-либо работой, если он не извлечет из нее какой-либо пользы.",
+      "Привет! Добро пожаловть на страницу-портфолио, отображающую основную информацию обо мне как разработчике. Меня, кстати, зовут Тимур и мне 21. Я хорошо знаком с Python, Java и JavaScript, а также многими популярными библиотеками, сопутствующими этим языкам. В программировании я 3 год, имею опыт разработки в областях бэкенд, фронт, прикладных решений и машинного обучения / big data. В данный момент осваиваю профессиональные навыки в создании пользовательских интерфейсов в Web-пространстве и активно ищу работу в этом направлении. Эта адаптивная страница написана мной и далее Вы можете ознакомиться со ступенями моего образования, достижениями, навыками и ссылками на сторонние проекты!",
     eduTitle: "Образование",
 
     eduSchoolLevel: "среднее",
