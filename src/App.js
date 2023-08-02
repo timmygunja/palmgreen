@@ -16,7 +16,7 @@ function App() {
 
   const engText = {
     bioText:
-      "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am 21. I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries of these languages. This is my third year of programming so far and I have experience mostly in the fields of backend, front, applied solutions and machine learning / big data fields. Currently I am attaining professional skills in developing user interfaces on Web and actively looking for a mathcing working position. This adaptive page was created by me and further you can get acquainted with the stages of my education, achievements, skills and links to some of my projects!",
+      "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am 21. I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries related to these languages. This is my third year of programming so far and I my current experience is mostly in the fields of backend, front, applied solutions and machine learning / big data fields. Currently I am attaining professional skills in developing user interfaces on Web and actively looking for a mathcing working position. This adaptive page was created by me and further you can get acquainted with the stages of my education, achievements, skills and links to some of my projects!",
     eduTitle: "Education",
 
     eduSchoolLevel: "mid - high",
@@ -79,7 +79,7 @@ function App() {
 
     mernProjectTitle: "Простой фуллстэк интернет-магазин",
     mernProjectFront: "Фронт: 24 папки / 82 файла / 4442 строки кода",
-    mernProjectBack: "Бэк: 7 папки / 17 файла / 934 строки кода",
+    mernProjectBack: "Бэк: 7 папок / 17 файлов / 934 строки кода",
 
     gitLink: "перейти на гитхаб",
   };
