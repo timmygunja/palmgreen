@@ -162,6 +162,7 @@
 }
 
 .bio-education-place,
+.bio-education-speciality,
 .bio-education-years {
   grid-area: main;
   /* font-size: 1.8vw; */

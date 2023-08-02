@@ -33,11 +33,13 @@ function App() {
     eduUniLevel: "bachelors",
     eduUniTitle:
       "Financial University under the Government of Russian Federation",
+    eduUniSpeciality: "IT-services and Big Data in Economics & Finances",
     eduUniYears: "Moscow 2019 - 2023",
     eduUniAchievement: "Exam mark on average: 4,7 / 5",
 
     eduMagLevel: "masters",
-    eduMagTitle: "Future masters degree",
+    eduMagTitle: "Financial University under the Government of Russian Federation",
+    eduMagSpeciality: "DevOps Engineering",
     eduMagYears: "2023 - 2025",
 
     mernProjectTitle: "Simple Fullstack E-Commerce Website",
@@ -66,11 +68,13 @@ function App() {
     eduUniLevel: "бакалавриат",
     eduUniTitle:
       "Финансовый Университет при Правительстве Российской Федерации",
+    eduUniSpeciality: "IT-сервисы и Анализ Больших Данных в Экономике и Финансах",
     eduUniYears: "Москва 2019 - 2023",
     eduUniAchievement: "Среднеэкзаменационная оценка: 4,7 / 5",
 
     eduMagLevel: "магистратура",
-    eduMagTitle: "Будущая магистратура",
+    eduMagTitle: "Финансовый Университет при Правительстве Российской Федерации",
+    eduMagSpeciality: "DevOps - инженерия",
     eduMagYears: "2023 - 2025",
 
     mernProjectTitle: "Простой фуллстэк интернет-магазин",

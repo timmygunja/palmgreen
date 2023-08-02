@@ -19,10 +19,12 @@ const Bio = (props) => {
     eduSchoolAchievement,
     eduUniLevel,
     eduUniTitle,
+    eduUniSpeciality,
     eduUniYears,
     eduUniAchievement,
     eduMagLevel,
     eduMagTitle,
+    eduMagSpeciality,
     eduMagYears,
   } = useSelector((state) => state.ui.currentText);
   const marks = [80, 83, 83, 96];
@@ -158,6 +160,7 @@ const Bio = (props) => {
           <div className="centered-vertically">
             <div className="education-card-info">
               <p className="bio-education-place">{eduUniTitle}</p>
+              <p className="bio-education-speciality">{eduUniSpeciality}</p>
               <p className="bio-education-years">{eduUniYears}</p>
               <ul className="bio-education-achievements">
                 <p>{eduUniAchievement}</p>
@@ -178,6 +181,7 @@ const Bio = (props) => {
           <div className="centered-vertically">
             <div className="education-card-info">
               <p className="bio-education-place">{eduMagTitle}</p>
+              <p className="bio-education-speciality">{eduMagSpeciality}</p>
               <p className="bio-education-years">{eduMagYears}</p>
             </div>
           </div>
