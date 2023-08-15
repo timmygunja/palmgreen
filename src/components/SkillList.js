@@ -91,6 +91,11 @@ const SkillList = (props) => {
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
+            name={"Redux"}
+            stars={16}
+            link={"https://github.com/timmygunja/mern-learn-frontend"}
+          />
+          <Skill
             name={"NodeJS"}
             stars={13}
             link={"https://github.com/timmygunja/mern-learn-backend"}
