@@ -22,7 +22,7 @@ export const lightTheme = {
 export const darkTheme = {
   body: "#313032",
   text: "#ffffff",
-  navBack: "#363537",
+  navBack: "#2d2c2e",
   navBorder: mainDarkColor,
   navLinkHover: "#4a4a4a",
   sectionLegend: "#f5f5f5",
