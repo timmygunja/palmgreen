@@ -86,6 +86,11 @@ const SkillList = (props) => {
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
+            name={"TypeScript"}
+            stars={14}
+            link={"https://github.com/timmygunja/ts-react-todos"}
+          />
+          <Skill
             name={"React"}
             stars={18}
             link={"https://github.com/timmygunja/mern-learn-frontend"}
@@ -106,7 +111,6 @@ const SkillList = (props) => {
             link={"https://github.com/timmygunja/mern-learn-backend"}
           />
           <Skill name={"SCSS"} stars={10} />
-          <Skill name={"Figma"} stars={10} />
         </SkillTable>
         <SkillTable className={python}>
           <Skill

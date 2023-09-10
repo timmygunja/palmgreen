@@ -4,7 +4,7 @@
   padding: 0.25em 1em;
   /* font-size: 1.25rem; */
   /* font-size: 2vw; */
-  font-size: var(--h7-font-size);
+  font-size: var(--h8-font-size);
   /* font-family: "Balsamiq Sans", cursive; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 1px;
@@ -16,6 +16,7 @@
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em rgb(34, 224, 123);
   transition: all 200ms linear;
   position: relative;
+  letter-spacing: 3px;
 }
 
 /* @media screen and (max-width: 900px) {

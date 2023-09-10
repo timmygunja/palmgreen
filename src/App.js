@@ -38,7 +38,8 @@ function App() {
     eduUniAchievement: "Exam mark on average: 4,7 / 5",
 
     eduMagLevel: "masters",
-    eduMagTitle: "Financial University under the Government of Russian Federation",
+    eduMagTitle:
+      "Financial University under the Government of Russian Federation",
     eduMagSpeciality: "DevOps Engineering",
     eduMagYears: "2023 - 2025",
 
@@ -46,12 +47,15 @@ function App() {
     mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
     mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
 
-    gitLink: "check out github",
+    todoProjectTitle: "ts-react",
+    todoProjectLinkText: "see github repository",
+
+    gitLink: "github-projects",
   };
 
   const ruText = {
     bioText:
-      "Привет! Добро пожаловть на страницу-портфолио, отображающую основную информацию обо мне как разработчике. Меня, кстати, зовут Тимур и мне 21. Я хорошо знаком с Python, Java и JavaScript, а также многими популярными библиотеками, сопутствующими этим языкам. В программировании я 3 год, имею опыт разработки в областях бэкенд, фронт, прикладных решений и машинного обучения / big data. В данный момент осваиваю профессиональные навыки в создании пользовательских интерфейсов в Web-пространстве и активно ищу работу в этом направлении. Эта адаптивная страница написана мной и далее Вы можете ознакомиться со ступенями моего образования, достижениями, навыками и ссылками на сторонние проекты!",
+      "Привет! Добро пожаловть на страницу-портфолио, отображающую основную информацию обо мне как разработчике. Меня, кстати, зовут Тимур и мне 21. Я хорошо знаком с Python, Java и JavaScript, а также многими популярными библиотеками, сопутствующими этим языкам. Разрабатываю с 2019 года, имею опыт в областях бэкенд, фронт, прикладных решений и машинного обучения / big data, в том числе и рабочий. В данный момент оттачиваю профессиональные навыки в создании пользовательских интерфейсов в Web-пространстве и активно ищу работу в этом направлении. Эта страница написана мной, далее Вы можете ознакомиться со ступенями моего образования, достижениями, навыками и ссылками на мои сторонние проекты!",
     eduTitle: "Образование",
 
     eduSchoolLevel: "среднее",
@@ -68,12 +72,14 @@ function App() {
     eduUniLevel: "бакалавриат",
     eduUniTitle:
       "Финансовый Университет при Правительстве Российской Федерации",
-    eduUniSpeciality: "IT-сервисы и Анализ Больших Данных в Экономике и Финансах",
+    eduUniSpeciality:
+      "IT-сервисы и Анализ Больших Данных в Экономике и Финансах",
     eduUniYears: "Москва 2019 - 2023",
     eduUniAchievement: "Среднеэкзаменационная оценка: 4,7 / 5",
 
     eduMagLevel: "магистратура",
-    eduMagTitle: "Финансовый Университет при Правительстве Российской Федерации",
+    eduMagTitle:
+      "Финансовый Университет при Правительстве Российской Федерации",
     eduMagSpeciality: "DevOps - инженерия",
     eduMagYears: "2023 - 2025",
 
@@ -81,7 +87,10 @@ function App() {
     mernProjectFront: "Фронт: 24 папки / 82 файла / 4442 строки кода",
     mernProjectBack: "Бэк: 7 папок / 17 файлов / 934 строки кода",
 
-    gitLink: "перейти на гитхаб",
+    todoProjectTitle: "ts-react",
+    todoProjectLinkText: "Перейти на github репозиторий",
+
+    gitLink: "github-проекты",
   };
 
   const onClickMe = () => {
