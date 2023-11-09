@@ -16,12 +16,16 @@ export const lightTheme = {
   blendMode: "lighten",
   pathStroke: "black",
 
+  cardsBackground: "#fafafa",
+  border: "2px solid rgba(107, 106, 106, 0.4)",
+  boxShadow: "0 0 5px 2px rgba(135, 135, 135, 0.3)",
+
   footerBackground: "rgba(0, 0, 0, 0.85)",
 };
 
 export const darkTheme = {
   body: "#313032",
-  text: "#ffffff",
+  text: "rgb(237, 237, 237)",
   navBack: "#2d2c2e",
   navBorder: mainDarkColor,
   navLinkHover: "#4a4a4a",
@@ -32,6 +36,10 @@ export const darkTheme = {
   // exam charts
   blendMode: "darken",
   pathStroke: "white",
+
+  cardsBackground: "#363538",
+  cardsBorder: "2px solid #28272a",
+  cardsBoxShadow: "0 0 5px 2px #28272a",
 
   footerBackground: "rgba(0, 0, 0, 0.25)",
 };

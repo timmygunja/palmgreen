@@ -53,11 +53,18 @@ const GlobalStyles = createGlobalStyle`
   }
   
   g.logoBlend > rect {
-    fill: ${({ theme }) => theme.body};
+    fill: ${({ theme }) => theme.cardsBackground};
   }
   
   g.logoBlend > path {
     stroke: ${({ theme }) => theme.pathStroke};
+  }
+
+  .education-card,
+  .project-card {
+    background-color: ${({ theme }) => theme.cardsBackground};
+    border: ${({ theme }) => theme.cardsBorder};
+    box-shadow: ${({ theme }) => theme.cardsBoxShadow};
   }
 
   .footer {

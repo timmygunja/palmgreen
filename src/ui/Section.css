@@ -15,4 +15,5 @@
   /* font-size: 20px; */
   font-size: var(--h9-font-size);
   color: rgba(0, 0, 0, 0.5);
+  color: rgb(45, 44, 48);
 }
