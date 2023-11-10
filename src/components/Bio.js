@@ -101,47 +101,22 @@ const Bio = (props) => {
           {eduTitle}
         </div>
 
-        <a
-          className="education-card"
-          href="https://almamater13.ru"
-          target="_blank"
-        >
+        <div className="education-card">
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
-                <img src={"../../school.png"}></img>
+                <img src={"../../mag.png"}></img>
               </div>
-              <p>{eduSchoolLevel}</p>
+              <p>{eduMagLevel}</p>
             </div>
           </div>
           <div className="centered-vertically">
             <div className="education-card-info">
-              <p className="bio-education-place">{eduSchoolTitle}</p>
-              <p className="bio-education-years">{eduSchoolYears}</p>
-              <div className="bio-education-achievements">
-                <p>{eduSchoolAchievement}</p>
-              </div>
+              <p className="bio-education-place">{eduMagTitle}</p>
+              <p className="bio-education-speciality">{eduMagSpeciality}</p>
+              <p className="bio-education-years">{eduMagYears}</p>
             </div>
           </div>
-        </a>
-
-        <div className="education-card exams" onClick={playAnim}>
-          <div className="education-card-prev hard-centered">
-            <div>
-              <div className="education-card-logo">
-                <img src={"../../exams.png"}></img>
-              </div>
-              <p>{examLevel}</p>
-            </div>
-          </div>
-          {/* <div className="centered-vertically"> */}
-          <div className="education-card-info">
-            <ExamChart name={examMaths} mark={marks[0]} />
-            <ExamChart name={examCS} mark={marks[1]} />
-            <ExamChart name={examEnglish} mark={marks[2]} />
-            <ExamChart name={examRussian} mark={marks[3]} />
-          </div>
-          {/* </div> */}
         </div>
 
         <a
@@ -169,23 +144,48 @@ const Bio = (props) => {
           </div>
         </a>
 
-        <div className="education-card">
+        <div className="education-card exams" onClick={playAnim}>
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
-                <img src={"../../mag.png"}></img>
+                <img src={"../../exams.png"}></img>
               </div>
-              <p>{eduMagLevel}</p>
+              <p>{examLevel}</p>
+            </div>
+          </div>
+          {/* <div className="centered-vertically"> */}
+          <div className="education-card-info">
+            <ExamChart name={examMaths} mark={marks[0]} />
+            <ExamChart name={examCS} mark={marks[1]} />
+            <ExamChart name={examEnglish} mark={marks[2]} />
+            <ExamChart name={examRussian} mark={marks[3]} />
+          </div>
+          {/* </div> */}
+        </div>
+
+        <a
+          className="education-card"
+          href="https://almamater13.ru"
+          target="_blank"
+        >
+          <div className="education-card-prev hard-centered">
+            <div>
+              <div className="education-card-logo">
+                <img src={"../../school.png"}></img>
+              </div>
+              <p>{eduSchoolLevel}</p>
             </div>
           </div>
           <div className="centered-vertically">
             <div className="education-card-info">
-              <p className="bio-education-place">{eduMagTitle}</p>
-              <p className="bio-education-speciality">{eduMagSpeciality}</p>
-              <p className="bio-education-years">{eduMagYears}</p>
+              <p className="bio-education-place">{eduSchoolTitle}</p>
+              <p className="bio-education-years">{eduSchoolYears}</p>
+              <div className="bio-education-achievements">
+                <p>{eduSchoolAchievement}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

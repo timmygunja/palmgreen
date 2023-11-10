@@ -76,12 +76,12 @@ div.logoGradient {
   height: 100%;
   border-radius: 50%;
   background: conic-gradient(
-    #ff4800 5%,
+    #ff5e00 5%,
     #ff8c00 30%,
     #dfd902 50%,
     #91d12b 70%,
-    #0cea6c 85%,
-    #00ff9d 100%
+    #66ff00 85%,
+    #91ff00 100%
   );
 }
 
@@ -100,4 +100,5 @@ g.logoBlend > path {
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transition: 2s stroke-dashoffset;
+
 }
