@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const engText = {
   bioText:
-    "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am 21. I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries related to these languages. Developing since 2019, most of my recent experience is in the fields of backend, front, applied solutions and machine learning / big data programming. Currently I am sharpening professional skills in developing user interfaces on Web and actively looking for a mathcing working position. This adaptive page was created by me and further you can get acquainted with the stages of my education, achievements, skills and links to some of my other projects!",
+    "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries related to these languages. Coding since 2019, my experience now is mostly in the fields of frontend, backend, applied solutions and machine learning / big data development. This adaptive page was created by me so you can further get acquainted with the stages of my education, achievements, skills and links to my projects!",
   eduTitle: "Education",
 
   eduSchoolLevel: "mid - high",

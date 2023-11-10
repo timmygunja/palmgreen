@@ -16,7 +16,7 @@ function App() {
 
   const engText = {
     bioText:
-      "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am 21. I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries related to these languages. This is my third year of programming so far and I my current experience is mostly in the fields of backend, front, applied solutions and machine learning / big data fields. Currently I am attaining professional skills in developing user interfaces on Web and actively looking for a mathcing working position. This adaptive page was created by me and further you can get acquainted with the stages of my education, achievements, skills and links to some of my projects!",
+      "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries related to these languages. Coding since 2019, my experience now is mostly in the fields of frontend, backend, applied solutions and machine learning / big data development. This adaptive page was created by me so you can further get acquainted with the stages of my education, achievements, skills and links to my projects!",
     eduTitle: "Education",
 
     eduSchoolLevel: "mid - high",
@@ -55,7 +55,7 @@ function App() {
 
   const ruText = {
     bioText:
-      "Привет! Добро пожаловть на страницу-портфолио, отображающую основную информацию обо мне как разработчике. Меня, кстати, зовут Тимур и мне 21. Я хорошо знаком с Python, Java и JavaScript, а также многими популярными библиотеками, сопутствующими этим языкам. Разрабатываю с 2019 года, имею опыт в областях бэкенд, фронт, прикладных решений и машинного обучения / big data, в том числе и рабочий. В данный момент оттачиваю профессиональные навыки в создании пользовательских интерфейсов в Web-пространстве и активно ищу работу в этом направлении. Эта страница написана мной, далее Вы можете ознакомиться со ступенями моего образования, достижениями, навыками и ссылками на мои сторонние проекты!",
+      "Привет! Добро пожаловть на страницу-портфолио, отображающую основную информацию обо мне как разработчике. Меня, кстати, зовут Тимур и я хорошо знаком с Python, Java и JavaScript, а также многими популярными библиотеками, сопутствующими этим языкам. Разрабатываю с 2019 года, имею опыт в областях фронтенд, бэкенд, прикладных решений и машинного обучения / big data, в том числе и рабочий. Данная адаптивная страница создана мной, здесь Вы можете ознакомиться со ступенями моего образования, достижениями, навыками и ссылками на мои проекты!",
     eduTitle: "Образование",
 
     eduSchoolLevel: "среднее",
