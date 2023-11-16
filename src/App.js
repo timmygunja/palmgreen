@@ -132,8 +132,8 @@ function App() {
 
         {/* <img scr={"flagusa.png"} style={{ width: "100px", height: "100px" }} /> */}
         <div ref={refMe}></div>
-        <Section name={"Bio"}>
-          <Bio id="bio" refMyself={refMyself} />
+        <Section name={"Bio"} className="bio-container">
+          <Bio refMyself={refMyself} />
         </Section>
 
         <div ref={refAnd}></div>
