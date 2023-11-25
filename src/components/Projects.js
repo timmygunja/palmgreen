@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./Projects.css";
+import ProjectCard from "./ProjectCard";
 
 const cheerio = require("cheerio");
 
@@ -34,85 +35,102 @@ const Projects = (props) => {
 
   const {
     mernProjectTitle,
-    mernProjectFront,
-    mernProjectBack,
-    todoProjectTitle,
-    todoProjectLinkText,
+    mernProjectCaption,
+    mernProjectDescMain,
+    // mernProjectDescDevteam,
+    mernProjectDescStack,
+    mernProjectDescImgPath,
+    mernProjectLinkFront,
+    mernProjectLinkBack,
+
+    newsBotProjectTitle,
+    newsBotProjectCaption,
+    newsBotProjectDescMain,
+    // newsBotProjectDescDevteam,
+    newsBotProjectDescStack,
+    newsBotProjectDescImgPath,
+
+    todosProjectTitle,
+    todosProjectCaption,
+    todosProjectDescMain,
+    // todosProjectDescDevteam,
+    todosProjectDescStack,
+    todosProjectDescImgPath,
+
+    mlFacesProjectTitle,
+    mlFacesProjectCaption,
+    mlFacesProjectDescMain,
+    // mlFacesProjectDescDevteam,
+    mlFacesProjectDescStack,
+    mlFacesProjectDescImgPath,
+
+    weatherBotProjectTitle,
+    weatherBotProjectCaption,
+    weatherBotProjectDescMain,
+    // weatherBotProjectDescDevteam,
+    weatherBotProjectDescStack,
+    weatherBotProjectDescImgPath,
   } = useSelector((state) => state.ui.currentText);
 
   return (
     <>
-      <div className={"projects"}>
-        <a
-          className="project-card"
-          href="https://mern-timmygunja.vercel.app"
-          target="_blank"
-        >
-          <div className="project-card-prev hard-centered">
-            <div>
-              <div className="project-card-logo">
-                <img src={"../../layers.png"}></img>
-              </div>
-              <p>mern-learn</p>
-            </div>
-          </div>
-          <div className="centered-vertically">
-            <div className="project-card-info">
-              <p>{mernProjectTitle}</p>
-              <p>MongoDB Express React NodeJS</p>
-              <p>
-                <a
-                  href="https://github.com/timmygunja/mern-learn-frontend"
-                  target="_blank"
-                  className="project-link"
-                >
-                  {mernProjectFront}
-                </a>
-              </p>
-              <p>
-                <a
-                  href="https://github.com/timmygunja/mern-learn-backend"
-                  target="_blank"
-                  className="project-link"
-                >
-                  {mernProjectBack}
-                </a>
-              </p>
-            </div>
-          </div>
-        </a>
+      <div className="projects">
+        <ProjectCard
+          previewImg={"../../mernProject.png"}
+          title={mernProjectTitle}
+          caption={mernProjectCaption}
+          gitLink={"#"}
+          projectLink={"#"}
+          descriptionMain={mernProjectDescMain}
+          // descriptionDevteam={mernProjectDescDevteam}
+          descriptionStack={mernProjectDescStack}
+          descriptionImagePath={mernProjectDescImgPath}
+        />
+        <ProjectCard
+          previewImg={"../../news.png"}
+          title={newsBotProjectTitle}
+          caption={newsBotProjectCaption}
+          gitLink={"#"}
+          projectLink={"#"}
+          descriptionMain={newsBotProjectDescMain}
+          // descriptionDevteam={mernProjectDescDevteam}
+          descriptionStack={newsBotProjectDescStack}
+          descriptionImagePath={newsBotProjectDescImgPath}
+        />
+        <ProjectCard
+          previewImg={"../../todos.png"}
+          title={todosProjectTitle}
+          caption={todosProjectCaption}
+          gitLink={"#"}
+          projectLink={"#"}
+          descriptionMain={todosProjectDescMain}
+          // descriptionDevteam={mernProjectDescDevteam}
+          descriptionStack={todosProjectDescStack}
+          descriptionImagePath={todosProjectDescImgPath}
+        />
+        <ProjectCard
+          previewImg={"../../mlFaces.png"}
+          title={mlFacesProjectTitle}
+          caption={mlFacesProjectCaption}
+          gitLink={"#"}
+          projectLink={"#"}
+          descriptionMain={mlFacesProjectDescMain}
+          // descriptionDevteam={mernProjectDescDevteam}
+          descriptionStack={mlFacesProjectDescStack}
+          descriptionImagePath={mlFacesProjectDescImgPath}
+        />
+        <ProjectCard
+          previewImg={"../../weather.png"}
+          title={weatherBotProjectTitle}
+          caption={weatherBotProjectCaption}
+          gitLink={"#"}
+          projectLink={"#"}
+          descriptionMain={weatherBotProjectDescMain}
+          // descriptionDevteam={mernProjectDescDevteam}
+          descriptionStack={weatherBotProjectDescStack}
+          descriptionImagePath={weatherBotProjectDescImgPath}
+        />
       </div>
-      <div className={"projects"}>
-        <a
-          className="project-card"
-          href="https://ts-react-todos.vercel.app"
-          target="_blank"
-        >
-          <div className="project-card-prev hard-centered">
-            <div>
-              <div className="project-card-logo">
-                <img src={"../../todo.png"}></img>
-              </div>
-              <p>{todoProjectTitle}</p>
-            </div>
-          </div>
-          <div className="centered-vertically">
-            <div className="project-card-info">
-              <p>Todo App</p>
-              <p>React & TypeScript</p>
-              <p>
-                <a
-                  href="https://github.com/timmygunja/ts-react-todos"
-                  target="_blank"
-                  className="project-link"
-                >
-                  {todoProjectLinkText}
-                </a>
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>{" "}
     </>
   );
 };

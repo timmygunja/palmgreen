@@ -43,7 +43,7 @@ code {
     --h9-font-size: calc(6px + 1.5vw);
     --h10-font-size: calc(4px + 1.35vw);
     --h11-font-size: calc(2px + 1.15vw);
-    --h12-font-size: calc(1px + 1.05vw);
+    --h12-font-size: calc(2px + 1.1vw);
 
     --exam-num: calc(9px + 1.3vw);
     --exam-text: calc(2px + 1vw);

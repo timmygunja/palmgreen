@@ -29,13 +29,52 @@ const engText = {
   eduMagSpeciality: "DevOps Engineering",
   eduMagYears: "2023 - 2025",
 
-  mernProjectTitle: "Simple Fullstack E-Commerce Website",
+  projectDescMainTitle: "Project description:",
+  projectDescStructure: "Project structure:",
+
+  mernProjectTitle: "E-Commerce Drinks Website",
+  mernProjectCaption: "MongoDB Express React NodeJs",
+  mernProjectDescMain:
+    "A prototype of a developed commercial project for an online store with basic functionality of a product grid, adding cards to favorites, cart, administrative content control panel, and so on.",
+  // mernProjectDescDevteam: "Single developer",
+  mernProjectDescStack: ["MongoDB", "Express", "React", "NodeJS"],
+  mernProjectDescImgPath: "../../layers.png",
   mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
   mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
 
-  todoProjectTitle: "ts-react",
-  todoProjectLinkText: "see github repository",
+  newsBotProjectTitle: "Auditorial reporting automation",
+  newsBotProjectCaption: "Python Selenium Telegram API Excel",
+  newsBotProjectDescMain:
+    "Automation of information collection for the audit company Ernst&Young (now B1). A Telegram bot that accepts requests, including a news source, date range, and one of or all 80+ regions of Russia, for further parsing of news, conversion to an Excel table according to a given layout, and sending via Telegram.",
+  // mernProjectDescDevteam: "Single developer",
+  newsBotProjectDescStack: ["Python", "Selenium", "Telegram API", "Excel"],
+  newsBotProjectDescImgPath: "../../layers.png",
 
+  todosProjectTitle: "Todo-list app / task-manager",
+  todosProjectCaption: "TypeScript React JavaScript CSS",
+  todosProjectDescMain:
+    "A simple application that allows you to maintain a list of personal to-dos / goals with the functionality of adding notes, viewing active and completed entries, as well as clearing data.",
+  // mernProjectDescDevteam: "Single developer",
+  todosProjectDescStack: ["TypeScript", "React", "JavaScript", "CSS"],
+  todosProjectDescImgPath: "../../layers.png",
+
+  mlFacesProjectTitle: "AI Facial Recognition",
+  mlFacesProjectCaption: "Machine Learning Python Pandas Numpy",
+  mlFacesProjectDescMain:
+    'Course project, implementation of a machine learning model for face recognition on the "olivetti_faces" dataset using the Python language and the Pandas and Numpy libraries for data processing, MatPlotLib for data visualization and the number of ML models included in the Sklearn module.',
+  // mernProjectDescDevteam: "Single developer",
+  mlFacesProjectDescStack: ["Machine Learning", "Python", "Pandas", "Numpy"],
+  mlFacesProjectDescImgPath: "../../layers.png",
+
+  weatherBotProjectTitle: "Weather forecast and automailing",
+  weatherBotProjectCaption: "Java Telegram API Threads Json",
+  weatherBotProjectDescMain:
+    "Weather telegram bot in Java with the functionality of parsing data for a specified city, receiving current information and future forecasts, as well as the ability to subscribe to daily newsletters with forecasts.",
+  // mernProjectDescDevteam: "Single developer",
+  weatherBotProjectDescStack: ["Java", "Telegram API", "Threads", "Json"],
+  weatherBotProjectDescImgPath: "../../layers.png",
+
+  // FOOTER
   gitLink: "github-projects",
 };
 

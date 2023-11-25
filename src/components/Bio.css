@@ -13,7 +13,7 @@
 }
 
 /* .bio {
-  margin: 0;
+  margin-top: 5rem;
 } */
 
 .bio-about {
@@ -124,8 +124,8 @@
 .education-card:hover {
   cursor: pointer;
   transform: scale(1.01);
-  box-shadow: 0 0 7px 4px rgba(115, 115, 115, 0.3),
-    inset 0 0 5px 2px rgba(115, 115, 115, 0.1);
+  box-shadow: 0 0 7px 4px rgba(100, 100, 100, 0.2),
+    inset 0 0 5px 2px rgba(100, 100, 100, 0.075);
 }
 
 .education-card-prev {

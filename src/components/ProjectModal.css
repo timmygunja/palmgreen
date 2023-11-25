@@ -1,0 +1,115 @@
+.project-modal-container {
+  overflow-y: scroll;
+  max-height: 80vh;
+  border-radius: 15px;
+  padding: 0 0.4rem;
+  padding-bottom: 0.25rem;
+}
+
+.project-modal-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "head"
+    "slider"
+    "description";
+  grid-gap: 1rem;
+}
+
+.project-modal-head {
+  grid-area: head;
+  display: grid;
+  grid-template-columns: 16fr 4fr;
+  grid-gap: 1rem;
+  padding: 0.75rem 0.25rem;
+}
+
+.project-modal-title {
+  display: block;
+  font-size: var(--h9-font-size);
+  font-weight: 900;
+  text-transform: uppercase;
+  /* overflow-x: hidden;
+  line-height: 1rem;
+  white-space: nowrap; */
+}
+
+.project-modal-caption {
+  display: block;
+  font-size: var(--h11-font-size);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.project-modal-links {
+  display: flex;
+  justify-content: center;
+}
+
+.project-modal-links div:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+.project-modal-links-button {
+  width: 2rem;
+  height: 2rem;
+  /* base color and border set in globalStyles*/
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.project-modal-links-button:hover {
+  color: rgb(54, 54, 227);
+  border-color: rgb(54, 54, 227);
+}
+
+.project-modal-slider {
+  grid-area: slider;
+}
+
+.project-modal-img img {
+  width: 80%;
+  height: 80%;
+}
+
+.project-modal-description {
+  grid-area: description;
+}
+
+.project-modal-description-title,
+.project-modal-description-secondary-structure-title {
+  font-size: var(--h11-font-size);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0.25rem 0;
+}
+
+.project-modal-description-main,
+.project-modal-description-secondary {
+  margin: 0.5rem 0.4rem;
+  font-size: var(--h11-font-size);
+  font-weight: 400;
+  /* text-transform: uppercase; */
+}
+
+.project-modal-description-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "structure structure"
+    "img text";
+}
+
+.project-modal-description-secondary-structure-title {
+  grid-area: structure;
+}
+
+.project-modal-description-secondary-img {
+  grid-area: img;
+}
+
+.project-modal-description-secondary-text {
+  grid-area: text;
+}

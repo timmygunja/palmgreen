@@ -16,9 +16,17 @@ export const lightTheme = {
   blendMode: "lighten",
   pathStroke: "black",
 
+  // general cards
   cardsBackground: "#fafafa",
   border: "2px solid rgba(107, 106, 106, 0.4)",
   boxShadow: "0 0 5px 2px rgba(135, 135, 135, 0.3)",
+
+  // project cards
+  projectCardLinkColor: "rgba(50, 50, 50)",
+  projectCardLinkBorderColor: "rgba(50, 50, 50)",
+
+  // project card modals
+  projectModalDescTitleColor: "rgb(190, 190, 190)",
 
   footerBackground: "rgba(0, 0, 0, 0.85)",
 };
@@ -37,9 +45,17 @@ export const darkTheme = {
   blendMode: "darken",
   pathStroke: "white",
 
+  // general cards
   cardsBackground: "#363538",
   cardsBorder: "2px solid #28272a",
   cardsBoxShadow: "0 0 5px 2px #28272a",
+
+  // project cards
+  projectCardLinkColor: "rgba(150, 150, 150)",
+  projectCardLinkBorderColor: "rgba(150, 150, 150)",
+
+  // project card modals
+  projectModalDescTitleColor: "rgb(100, 100, 100)",
 
   footerBackground: "rgba(0, 0, 0, 0.25)",
 };

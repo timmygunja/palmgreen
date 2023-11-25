@@ -67,6 +67,22 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: ${({ theme }) => theme.cardsBoxShadow};
   }
 
+  .project-card-links-button {
+    color: ${({ theme }) => theme.projectCardLinkColor};;
+    border: 2px solid ${({ theme }) => theme.projectCardLinkBorderColor};;
+  }
+
+  .project-modal-container {
+    background-color: ${({ theme }) => theme.cardsBackground};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.25s linear;
+  }
+
+  .project-modal-description-title,
+  .project-modal-description-secondary-structure-title {
+    color: ${({ theme }) => theme.projectModalDescTitleColor};
+  }
+
   .footer {
     background-color: ${({ theme }) => theme.footerBackground};
   }
