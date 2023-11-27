@@ -33,6 +33,12 @@ const NavBar = (props) => {
       : setLanguageButtonClass("languagetoggle");
   };
 
+  const { navMe, navEducation, navSkills, navProjects } = useSelector(
+    (state) => state.ui.currentText
+  );
+
+  console.log(navEducation);
+
   return (
     <div className={"navbar"}>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
@@ -47,10 +53,10 @@ const NavBar = (props) => {
       </div>
 
       <div className={"mainbar"}>
-        <button onClick={props.onClickMe}>Me</button>
-        <button onClick={props.onClickMyself}>Myself</button>
-        <button onClick={props.onClickAnd}>&</button>
-        <button onClick={props.onClickI}>i</button>
+        <button onClick={props.onClickMe}>{navMe}</button>
+        <button onClick={props.onClickMyself}>{navEducation}</button>
+        <button onClick={props.onClickAnd}>{navSkills}</button>
+        <button onClick={props.onClickI}>{navProjects}</button>
       </div>
 
       {/* <div className={""}></div> */}

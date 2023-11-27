@@ -1,6 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const engText = {
+  navMe: "Me",
+  navEducation: "Education",
+  navSkills: "Skills",
+  navProjects: "Works",
+
   bioText:
     "Hello! Welcome to my little portfolio page, which contains information about me as a developer. By the way, my name is Tim and I am mostly familiar with Python, Java and JavaScript including a number of popular 3rd party libraries related to these languages. Coding since 2019, my experience now is mostly in the fields of frontend, backend, applied solutions and machine learning / big data development. This adaptive page was created by me so you can further get acquainted with the stages of my education, achievements, skills and links to my projects!",
   eduTitle: "Education",
