@@ -80,6 +80,15 @@ const Projects = (props) => {
     weatherBotProjectDescImgPath,
     weatherBotProjectLink,
     weatherBotProjectGitLink,
+
+    kaggleProjectTitle,
+    kaggleProjectCaption,
+    kaggleProjectDescMain,
+    // kaggleProjectDescDevteam,
+    kaggleProjectDescStack,
+    kaggleProjectDescImgPath,
+    kaggleProjectLink,
+    kaggleProjectGitLink,
   } = useSelector((state) => state.ui.currentText);
 
   return (
@@ -139,6 +148,17 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={weatherBotProjectDescStack}
           descriptionImagePath={weatherBotProjectDescImgPath}
+        />
+        <ProjectCard
+          previewImg={"../../kaggle.png"}
+          title={kaggleProjectTitle}
+          caption={kaggleProjectCaption}
+          gitLink={kaggleProjectGitLink}
+          projectLink={kaggleProjectLink}
+          descriptionMain={kaggleProjectDescMain}
+          // descriptionDevteam={mernProjectDescDevteam}
+          descriptionStack={kaggleProjectDescStack}
+          descriptionImagePath={kaggleProjectDescImgPath}
         />
       </div>
     </>

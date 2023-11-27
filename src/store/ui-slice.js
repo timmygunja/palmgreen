@@ -71,8 +71,10 @@ const engText = {
   // mernProjectDescDevteam: "Single developer",
   mlFacesProjectDescStack: ["Machine Learning", "Python", "Pandas", "Numpy"],
   mlFacesProjectDescImgPath: "../../layers.png",
-  mlFacesProjectLink: "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/blob/main/coursework.ipynb",
-  mlFacesProjectGitLink: "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/tree/main",
+  mlFacesProjectLink:
+    "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/blob/main/coursework.ipynb",
+  mlFacesProjectGitLink:
+    "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/tree/main",
 
   weatherBotProjectTitle: "Weather forecast and automailing",
   weatherBotProjectCaption: "Java Telegram API Threads Json",
@@ -83,6 +85,17 @@ const engText = {
   weatherBotProjectDescImgPath: "../../layers.png",
   weatherBotProjectLink: "https://t.me/WeatherTelegramFinBot",
   weatherBotProjectGitLink: "https://github.com/timmygunja/WeatherTelegramBot",
+
+  kaggleProjectTitle: "Kaggle AI Competitions",
+  kaggleProjectCaption: "Artificial Intelligence Machine Learning",
+  kaggleProjectDescMain:
+    "A set of research papers on the implementation of machine learning models in the field of finance: bank credit scoring, classification of policyholders, prediction of sales volumes, prediction of customer response and property value.",
+  // kaggleProjectDescDevteam: "Single developer",
+  kaggleProjectDescStack: ["Python", "AI", "ML", "Finances"],
+  kaggleProjectDescImgPath: "../../layers.png",
+  kaggleProjectLink:
+    "https://www.kaggle.com/timmygunja/competitions?tab=active",
+  kaggleProjectGitLink: "https://www.kaggle.com/timmygunja",
 
   // FOOTER
   gitLink: "github-projects",

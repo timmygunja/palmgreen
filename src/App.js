@@ -101,6 +101,17 @@ function App() {
     weatherBotProjectGitLink:
       "https://github.com/timmygunja/WeatherTelegramBot",
 
+    kaggleProjectTitle: "Kaggle AI Competitions",
+    kaggleProjectCaption: "Artificial Intelligence Machine Learning",
+    kaggleProjectDescMain:
+      "A set of research papers on the implementation of machine learning models in the field of finance: bank credit scoring, classification of policyholders, prediction of sales volumes, prediction of customer response and property value.",
+    // kaggleProjectDescDevteam: "Single developer",
+    kaggleProjectDescStack: ["Python", "AI", "ML", "Finances"],
+    kaggleProjectDescImgPath: "../../layers.png",
+    kaggleProjectLink:
+      "https://www.kaggle.com/timmygunja/competitions?tab=active",
+    kaggleProjectGitLink: "https://www.kaggle.com/timmygunja",
+
     // FOOTER
     gitLink: "github-projects",
   };
@@ -193,6 +204,17 @@ function App() {
     weatherBotProjectLink: "https://t.me/WeatherTelegramFinBot",
     weatherBotProjectGitLink:
       "https://github.com/timmygunja/WeatherTelegramBot",
+
+    kaggleProjectTitle: "Kaggle ИИ-соревнования",
+    kaggleProjectCaption: "Artificial Intelligence Machine Learning",
+    kaggleProjectDescMain:
+      "Набор исследовательских работ по реализации моделей машинного обучения в сфере финансов: кредитный банковский скоринг, классификация страхователей, предсказание объемов продаж, прогнозирование отлкика клиентов и стоимости имущества.",
+    // kaggleProjectDescDevteam: "Single developer",
+    kaggleProjectDescStack: ["Python", "AI", "ML", "Finances"],
+    kaggleProjectDescImgPath: "../../layers.png",
+    kaggleProjectLink:
+      "https://www.kaggle.com/timmygunja/competitions?tab=active",
+    kaggleProjectGitLink: "https://www.kaggle.com/timmygunja",
 
     // FOOTER
     gitLink: "github-проекты",
