@@ -41,6 +41,8 @@ const engText = {
   mernProjectDescImgPath: "../../layers.png",
   mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
   mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
+  mernProjectLink: "https://mern-timmygunja.vercel.app",
+  mernProjectGitLink: "https://github.com/timmygunja/mern-learn-frontend",
 
   newsBotProjectTitle: "Auditorial reporting automation",
   newsBotProjectCaption: "Python Selenium Telegram API Excel",
@@ -49,6 +51,8 @@ const engText = {
   // mernProjectDescDevteam: "Single developer",
   newsBotProjectDescStack: ["Python", "Selenium", "Telegram API", "Excel"],
   newsBotProjectDescImgPath: "../../layers.png",
+  newsBotProjectLink: "https://t.me/news_info_parser_bot",
+  newsBotProjectGitLink: "https://github.com/timmygunja/news_info_parser_bot",
 
   todosProjectTitle: "Todo-list app / task-manager",
   todosProjectCaption: "TypeScript React JavaScript CSS",
@@ -57,6 +61,8 @@ const engText = {
   // mernProjectDescDevteam: "Single developer",
   todosProjectDescStack: ["TypeScript", "React", "JavaScript", "CSS"],
   todosProjectDescImgPath: "../../layers.png",
+  todosProjectLink: "https://ts-react-todos.vercel.app",
+  todosProjectGitLink: "https://github.com/timmygunja/ts-react-todos",
 
   mlFacesProjectTitle: "AI Facial Recognition",
   mlFacesProjectCaption: "Machine Learning Python Pandas Numpy",
@@ -65,6 +71,8 @@ const engText = {
   // mernProjectDescDevteam: "Single developer",
   mlFacesProjectDescStack: ["Machine Learning", "Python", "Pandas", "Numpy"],
   mlFacesProjectDescImgPath: "../../layers.png",
+  mlFacesProjectLink: "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/blob/main/coursework.ipynb",
+  mlFacesProjectGitLink: "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/tree/main",
 
   weatherBotProjectTitle: "Weather forecast and automailing",
   weatherBotProjectCaption: "Java Telegram API Threads Json",
@@ -73,6 +81,8 @@ const engText = {
   // mernProjectDescDevteam: "Single developer",
   weatherBotProjectDescStack: ["Java", "Telegram API", "Threads", "Json"],
   weatherBotProjectDescImgPath: "../../layers.png",
+  weatherBotProjectLink: "https://t.me/WeatherTelegramFinBot",
+  weatherBotProjectGitLink: "https://github.com/timmygunja/WeatherTelegramBot",
 
   // FOOTER
   gitLink: "github-projects",

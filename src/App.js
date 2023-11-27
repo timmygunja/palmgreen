@@ -55,6 +55,8 @@ function App() {
     mernProjectDescImgPath: "../../layers.png",
     mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
     mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
+    mernProjectLink: "https://mern-timmygunja.vercel.app",
+    mernProjectGitLink: "https://github.com/timmygunja/mern-learn-frontend",
 
     newsBotProjectTitle: "Auditorial reporting automation",
     newsBotProjectCaption: "Python Selenium Telegram API Excel",
@@ -63,6 +65,8 @@ function App() {
     // mernProjectDescDevteam: "Single developer",
     newsBotProjectDescStack: ["Python", "Selenium", "Telegram API", "Excel"],
     newsBotProjectDescImgPath: "../../layers.png",
+    newsBotProjectLink: "https://t.me/news_info_parser_bot",
+    newsBotProjectGitLink: "https://github.com/timmygunja/news_info_parser_bot",
 
     todosProjectTitle: "Todo-list app / task-manager",
     todosProjectCaption: "TypeScript React JavaScript CSS",
@@ -71,14 +75,20 @@ function App() {
     // mernProjectDescDevteam: "Single developer",
     todosProjectDescStack: ["TypeScript", "React", "JavaScript", "CSS"],
     todosProjectDescImgPath: "../../layers.png",
+    todosProjectLink: "https://ts-react-todos.vercel.app",
+    todosProjectGitLink: "https://github.com/timmygunja/ts-react-todos",
 
     mlFacesProjectTitle: "AI Facial Recognition",
     mlFacesProjectCaption: "Machine Learning Python Pandas Numpy",
     mlFacesProjectDescMain:
-      "Course project, implementation of a machine learning model for face recognition on the \"olivetti_faces\" dataset using the Python language and the Pandas and Numpy libraries for data processing, MatPlotLib for data visualization and the number of ML models included in the Sklearn module.",
+      'Course project, implementation of a machine learning model for face recognition on the "olivetti_faces" dataset using the Python language and the Pandas and Numpy libraries for data processing, MatPlotLib for data visualization and the number of ML models included in the Sklearn module.',
     // mernProjectDescDevteam: "Single developer",
     mlFacesProjectDescStack: ["Machine Learning", "Python", "Pandas", "Numpy"],
     mlFacesProjectDescImgPath: "../../layers.png",
+    mlFacesProjectLink:
+      "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/blob/main/coursework.ipynb",
+    mlFacesProjectGitLink:
+      "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/tree/main",
 
     weatherBotProjectTitle: "Weather forecast and automailing",
     weatherBotProjectCaption: "Java Telegram API Threads Json",
@@ -87,8 +97,10 @@ function App() {
     // mernProjectDescDevteam: "Single developer",
     weatherBotProjectDescStack: ["Java", "Telegram API", "Threads", "Json"],
     weatherBotProjectDescImgPath: "../../layers.png",
+    weatherBotProjectLink: "https://t.me/WeatherTelegramFinBot",
+    weatherBotProjectGitLink:
+      "https://github.com/timmygunja/WeatherTelegramBot",
 
-    
     // FOOTER
     gitLink: "github-projects",
   };
@@ -123,7 +135,6 @@ function App() {
     eduMagSpeciality: "DevOps - инженерия",
     eduMagYears: "2023 - 2025",
 
-
     // PROJECTS
     projectDescMainTitle: "Описание проекта:",
     projectDescStructure: "Структура проекта:",
@@ -137,6 +148,8 @@ function App() {
     mernProjectDescImgPath: "../../layers.png",
     mernProjectLinkFront: "Фронт: 24 папки / 82 файла / 4442 строки кода",
     mernProjectLinkBack: "Бэк: 7 папок / 17 файлов / 934 строки кода",
+    mernProjectLink: "https://mern-timmygunja.vercel.app",
+    mernProjectGitLink: "https://github.com/timmygunja/mern-learn-frontend",
 
     newsBotProjectTitle: "Автоматизация аудиторской деятельности",
     newsBotProjectCaption: "Python Selenium Telegram API Excel",
@@ -145,6 +158,8 @@ function App() {
     // mernProjectDescDevteam: "Single developer",
     newsBotProjectDescStack: ["Python", "Selenium", "Telegram API", "Excel"],
     newsBotProjectDescImgPath: "../../layers.png",
+    newsBotProjectLink: "https://t.me/news_info_parser_bot",
+    newsBotProjectGitLink: "https://github.com/timmygunja/news_info_parser_bot",
 
     todosProjectTitle: "Todo-list приложение / таск-менеджер",
     todosProjectCaption: "TypeScript React JavaScript CSS",
@@ -153,14 +168,20 @@ function App() {
     // mernProjectDescDevteam: "Single developer",
     todosProjectDescStack: ["TypeScript", "React", "JavaScript", "CSS"],
     todosProjectDescImgPath: "../../layers.png",
+    todosProjectLink: "https://ts-react-todos.vercel.app",
+    todosProjectGitLink: "https://github.com/timmygunja/ts-react-todos",
 
     mlFacesProjectTitle: "ИИ Распознавание лиц",
     mlFacesProjectCaption: "Machine Learning Python Pandas Numpy",
     mlFacesProjectDescMain:
-      "Курсовой проект, реализация модели машинного обучения распознавания лиц на датасете \"olivetti_faces\" с ипользованием языка Python и библиотек Pandas и Numpy для обработки данных, MatPlotLib для визуализации данных и числа МО-моделей, входящих в модуль Sklearn.",
+      'Курсовой проект, реализация модели машинного обучения распознавания лиц на датасете "olivetti_faces" с ипользованием языка Python и библиотек Pandas и Numpy для обработки данных, MatPlotLib для визуализации данных и числа МО-моделей, входящих в модуль Sklearn.',
     // mernProjectDescDevteam: "Single developer",
     mlFacesProjectDescStack: ["Machine Learning", "Python", "Pandas", "Numpy"],
     mlFacesProjectDescImgPath: "../../layers.png",
+    mlFacesProjectLink:
+      "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/blob/main/coursework.ipynb",
+    mlFacesProjectGitLink:
+      "https://github.com/timmygunja/FinUniver-3-CourseWork-ML/tree/main",
 
     weatherBotProjectTitle: "Прогноз погоды и рассылка",
     weatherBotProjectCaption: "Java Telegram API Threads Json",
@@ -169,8 +190,10 @@ function App() {
     // mernProjectDescDevteam: "Single developer",
     weatherBotProjectDescStack: ["Java", "Telegram API", "Threads", "Json"],
     weatherBotProjectDescImgPath: "../../layers.png",
+    weatherBotProjectLink: "https://t.me/WeatherTelegramFinBot",
+    weatherBotProjectGitLink:
+      "https://github.com/timmygunja/WeatherTelegramBot",
 
-    
     // FOOTER
     gitLink: "github-проекты",
   };

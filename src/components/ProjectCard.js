@@ -21,11 +21,13 @@ const ProjectCard = (props) => {
   const handleClose = () => setModalOpen(false);
 
   const redirectToProject = () => {
-    window.location.assign(projectLink);
+    // window.location.assign(projectLink);
+    window.open(projectLink, "_blank");
   };
 
   const redirectToGit = () => {
-    window.location.assign(gitLink);
+    // window.location.assign(gitLink);
+    window.open(gitLink, "_blank");
   };
 
   return (

@@ -42,6 +42,8 @@ const Projects = (props) => {
     mernProjectDescImgPath,
     mernProjectLinkFront,
     mernProjectLinkBack,
+    mernProjectLink,
+    mernProjectGitLink,
 
     newsBotProjectTitle,
     newsBotProjectCaption,
@@ -49,6 +51,8 @@ const Projects = (props) => {
     // newsBotProjectDescDevteam,
     newsBotProjectDescStack,
     newsBotProjectDescImgPath,
+    newsBotProjectLink,
+    newsBotProjectGitLink,
 
     todosProjectTitle,
     todosProjectCaption,
@@ -56,6 +60,8 @@ const Projects = (props) => {
     // todosProjectDescDevteam,
     todosProjectDescStack,
     todosProjectDescImgPath,
+    todosProjectLink,
+    todosProjectGitLink,
 
     mlFacesProjectTitle,
     mlFacesProjectCaption,
@@ -63,6 +69,8 @@ const Projects = (props) => {
     // mlFacesProjectDescDevteam,
     mlFacesProjectDescStack,
     mlFacesProjectDescImgPath,
+    mlFacesProjectLink,
+    mlFacesProjectGitLink,
 
     weatherBotProjectTitle,
     weatherBotProjectCaption,
@@ -70,6 +78,8 @@ const Projects = (props) => {
     // weatherBotProjectDescDevteam,
     weatherBotProjectDescStack,
     weatherBotProjectDescImgPath,
+    weatherBotProjectLink,
+    weatherBotProjectGitLink,
   } = useSelector((state) => state.ui.currentText);
 
   return (
@@ -79,8 +89,8 @@ const Projects = (props) => {
           previewImg={"../../mernProject.png"}
           title={mernProjectTitle}
           caption={mernProjectCaption}
-          gitLink={"#"}
-          projectLink={"#"}
+          gitLink={mernProjectGitLink}
+          projectLink={mernProjectLink}
           descriptionMain={mernProjectDescMain}
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={mernProjectDescStack}
@@ -90,8 +100,8 @@ const Projects = (props) => {
           previewImg={"../../news.png"}
           title={newsBotProjectTitle}
           caption={newsBotProjectCaption}
-          gitLink={"#"}
-          projectLink={"#"}
+          gitLink={newsBotProjectGitLink}
+          projectLink={newsBotProjectLink}
           descriptionMain={newsBotProjectDescMain}
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={newsBotProjectDescStack}
@@ -101,8 +111,8 @@ const Projects = (props) => {
           previewImg={"../../todos.png"}
           title={todosProjectTitle}
           caption={todosProjectCaption}
-          gitLink={"#"}
-          projectLink={"#"}
+          gitLink={todosProjectGitLink}
+          projectLink={todosProjectLink}
           descriptionMain={todosProjectDescMain}
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={todosProjectDescStack}
@@ -112,8 +122,8 @@ const Projects = (props) => {
           previewImg={"../../mlFaces.png"}
           title={mlFacesProjectTitle}
           caption={mlFacesProjectCaption}
-          gitLink={"#"}
-          projectLink={"#"}
+          gitLink={mlFacesProjectGitLink}
+          projectLink={mlFacesProjectLink}
           descriptionMain={mlFacesProjectDescMain}
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={mlFacesProjectDescStack}
@@ -123,8 +133,8 @@ const Projects = (props) => {
           previewImg={"../../weather.png"}
           title={weatherBotProjectTitle}
           caption={weatherBotProjectCaption}
-          gitLink={"#"}
-          projectLink={"#"}
+          gitLink={weatherBotProjectGitLink}
+          projectLink={weatherBotProjectLink}
           descriptionMain={weatherBotProjectDescMain}
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={weatherBotProjectDescStack}
