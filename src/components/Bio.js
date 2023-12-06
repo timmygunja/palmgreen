@@ -1,8 +1,9 @@
 import "./Bio.css";
 import BioPng from "../ui/BioPng";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import ExamChart from "./ExamChart";
 import { useSelector } from "react-redux";
+import useIsInViewport from "../hooks/useIsInViewport";
 
 const Bio = (props) => {
   const {
@@ -29,7 +30,10 @@ const Bio = (props) => {
   } = useSelector((state) => state.ui.currentText);
   const marks = [80, 83, 83, 96];
 
+  // let firstAnimFlag = true;
+
   const animateExams = (mode) => {
+    // firstAnimFlag = false;
     const block = document.querySelectorAll(".block");
     let markCount = 0;
     block.forEach((item) => {
@@ -76,6 +80,9 @@ const Bio = (props) => {
     animateExams("backward");
     setTimeout(animateExams, 2300);
   };
+
+  // const chartsRef = useRef(null);
+  // const isInViewport1 = useIsInViewport(chartsRef);
 
   useEffect(() => {
     animateExams();
@@ -167,7 +174,9 @@ const Bio = (props) => {
           className="education-card"
           href="https://almamater13.ru"
           target="_blank"
+          // ref={chartsRef}
         >
+          {/* {isInViewport1 && firstAnimFlag && animateExams()} */}
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
