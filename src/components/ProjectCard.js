@@ -14,6 +14,7 @@ const ProjectCard = (props) => {
     // descriptionDevteam,
     descriptionStack,
     descriptionImagePath,
+    images,
   } = props;
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -45,6 +46,7 @@ const ProjectCard = (props) => {
         // descriptionDevteam={descriptionDevteam}
         descriptionStack={descriptionStack}
         descriptionImagePath={descriptionImagePath}
+        images={images}
       />
 
       <div class="project-card">

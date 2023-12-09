@@ -64,13 +64,25 @@
   border-color: rgb(54, 54, 227);
 }
 
-.project-modal-slider {
-  grid-area: slider;
-}
-
 .project-modal-img img {
   width: 80%;
   height: 80%;
+}
+
+.project-modal-slider {
+  grid-area: slider;
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  .project-modal-slider {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 67rem;
+  }
+}
+.project-modal-slider-carousel {
+  position: relative;
 }
 
 .project-modal-description {

@@ -3,24 +3,24 @@ import { Backdrop, Box, Fade, Modal } from "@material-ui/core";
 import classes from "./BasicModal.module.css";
 
 const screenWidth = window.innerWidth;
-let width = undefined;
+let width = "60%";
 let padding = 0;
 let translateTop = "-50%";
 
 if (screenWidth < 400) {
   translateTop = "-60%";
-  width = screenWidth * 0.9;
+  width = screenWidth * 0.95;
 } else if (screenWidth < 600) {
-  width = screenWidth * 0.8;
+  width = screenWidth * 0.85;
   translateTop = "-57%";
 } else if (screenWidth < 800) {
-  width = screenWidth * 0.7;
+  width = screenWidth * 0.75;
   translateTop = "-55%";
 } else if (screenWidth < 1000) {
-  width = screenWidth * 0.6;
+  width = screenWidth * 0.65;
   translateTop = "-55%";
 } else if (screenWidth < 1200) {
-  width = screenWidth * 0.55;
+  width = screenWidth * 0.62;
 }
 
 const style = {

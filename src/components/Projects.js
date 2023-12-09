@@ -66,7 +66,7 @@ const Projects = (props) => {
     <>
       <div className="projects">
         <ProjectCard
-          previewImg={"../../mernProject.png"}
+          previewImg={"mernProject.png"}
           title={mernProjectTitle}
           caption={mernProjectCaption}
           gitLink={mernProjectGitLink}
@@ -75,9 +75,17 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={mernProjectDescStack}
           descriptionImagePath={mernProjectDescImgPath}
+          images={[
+            "mernProject.png",
+            "mernProject2.png",
+            "mernProject3.png",
+            "mernProject4.png",
+            "mernProject5.png",
+            "mernProject6.png",
+          ]}
         />
         <ProjectCard
-          previewImg={"../../news.png"}
+          previewImg={"news.png"}
           title={newsBotProjectTitle}
           caption={newsBotProjectCaption}
           gitLink={newsBotProjectGitLink}
@@ -86,9 +94,10 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={newsBotProjectDescStack}
           descriptionImagePath={newsBotProjectDescImgPath}
+          images={["news.png"]}
         />
         <ProjectCard
-          previewImg={"../../todos.png"}
+          previewImg={"todos.png"}
           title={todosProjectTitle}
           caption={todosProjectCaption}
           gitLink={todosProjectGitLink}
@@ -97,9 +106,10 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={todosProjectDescStack}
           descriptionImagePath={todosProjectDescImgPath}
+          images={["todos.png"]}
         />
         <ProjectCard
-          previewImg={"../../mlFaces.png"}
+          previewImg={"mlFaces.png"}
           title={mlFacesProjectTitle}
           caption={mlFacesProjectCaption}
           gitLink={mlFacesProjectGitLink}
@@ -108,9 +118,10 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={mlFacesProjectDescStack}
           descriptionImagePath={mlFacesProjectDescImgPath}
+          images={["mlFaces.png"]}
         />
         <ProjectCard
-          previewImg={"../../weather.png"}
+          previewImg={"weather.png"}
           title={weatherBotProjectTitle}
           caption={weatherBotProjectCaption}
           gitLink={weatherBotProjectGitLink}
@@ -119,9 +130,10 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={weatherBotProjectDescStack}
           descriptionImagePath={weatherBotProjectDescImgPath}
+          images={["weather.png"]}
         />
         <ProjectCard
-          previewImg={"../../kaggle.png"}
+          previewImg={"kaggle.png"}
           title={kaggleProjectTitle}
           caption={kaggleProjectCaption}
           gitLink={kaggleProjectGitLink}
@@ -130,6 +142,7 @@ const Projects = (props) => {
           // descriptionDevteam={mernProjectDescDevteam}
           descriptionStack={kaggleProjectDescStack}
           descriptionImagePath={kaggleProjectDescImgPath}
+          images={["kaggle.png"]}
         />
       </div>
     </>

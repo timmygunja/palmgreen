@@ -4,6 +4,7 @@ import "./ProjectModal.css";
 import BasicModal from "../ui/elements/BasicModal";
 import Section from "../ui/Section";
 import { useSelector } from "react-redux";
+import EmblaCarousel from "../ui/elements/EmblaCarousel";
 
 const ProjectModal = (props) => {
   const {
@@ -16,6 +17,7 @@ const ProjectModal = (props) => {
     // descriptionDevteam,
     descriptionStack,
     descriptionImagePath,
+    images,
   } = props;
 
   const { projectDescMainTitle, projectDescStructure } = useSelector(
@@ -48,11 +50,19 @@ const ProjectModal = (props) => {
               </div>
             </div>
 
-            <div className="project-modal-slider">
-              <div className="project-modal-img hard-centered">
-                <img src={previewImg} alt="Project" />
+            {images.length > 1 ? (
+              <div className="project-modal-slider">
+                <div className="project-modal-slider-carousel">
+                  <EmblaCarousel options={{ loop: true }} images={images} />
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="project-modal-slider">
+                <div className="project-modal-img hard-centered">
+                  <img src={previewImg} alt="Project" />
+                </div>
+              </div>
+            )}
 
             <div className="project-modal-description">
               <div className="project-modal-description-main">

@@ -75,7 +75,6 @@ const GlobalStyles = createGlobalStyle`
   .project-modal-container {
     background-color: ${({ theme }) => theme.cardsBackground};
     color: ${({ theme }) => theme.text};
-    transition: all 0.25s linear;
   }
 
   .project-modal-description-title,
