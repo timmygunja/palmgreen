@@ -13,7 +13,7 @@
     "head"
     "slider"
     "description";
-  grid-gap: 1rem;
+  grid-gap: 0.75rem;
 }
 
 .project-modal-head {
@@ -65,8 +65,9 @@
 }
 
 .project-modal-img img {
-  width: 80%;
-  height: 80%;
+  /* width: 80%; */
+  /* height: 80%; */
+  max-height: 18rem;
 }
 
 .project-modal-slider {
