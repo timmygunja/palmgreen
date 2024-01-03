@@ -63,7 +63,6 @@ const GlobalStyles = createGlobalStyle`
   .education-card,
   .project-card {
     background-color: ${({ theme }) => theme.cardsBackground};
-    border: ${({ theme }) => theme.cardsBorder};
     box-shadow: ${({ theme }) => theme.cardsBoxShadow};
   }
 
