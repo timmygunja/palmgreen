@@ -27,7 +27,9 @@ export const lightTheme = {
   // project card modals
   projectModalDescTitleColor: "rgb(190, 190, 190)",
 
-  footerBackground: "rgba(0, 0, 0, 0.85)",
+  footerBackground: "rgba(0, 0, 0, 0.87)",
+  footerBackgroundImage:
+    "linear-gradient(to right, rgba(40, 40, 40, 0.3), rgba(25, 25, 25, 0.95), rgba(40, 40, 40, 0.3)), url('git-pattern.svg')",
 };
 
 export const darkTheme = {
@@ -56,4 +58,6 @@ export const darkTheme = {
   projectModalDescTitleColor: "rgb(100, 100, 100)",
 
   footerBackground: "rgba(0, 0, 0, 0.25)",
+  footerBackgroundImage:
+    "linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.9), rgba(0, 0, 0, 0.3)), url('git-pattern.svg')",
 };

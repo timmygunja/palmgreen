@@ -3,8 +3,6 @@ import NeonButton from "../elements/NeonButton";
 import "./Footer.css";
 
 const Footer = (props) => {
-  const { gitLink } = useSelector((state) => state.ui.currentText);
-
   const telegramLink = "https://t.me/timmygunja";
   const vkLink = "https://vk.com/timmygunja";
   const instaLink = "https://instagram.com/timmygunja_";
@@ -25,7 +23,7 @@ const Footer = (props) => {
   return (
     <div className="footer">
       <div className="footer-content hard-centered">
-        <NeonButton href={githubLink}>{gitLink}</NeonButton>
+        <NeonButton href={githubLink}>GitHub</NeonButton>
       </div>
       <div className="footer-links hard-centered">
         <div className="social-test">

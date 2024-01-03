@@ -116,9 +116,6 @@ function App() {
     kaggleProjectLink:
       "https://www.kaggle.com/timmygunja/competitions?tab=active",
     kaggleProjectGitLink: "https://www.kaggle.com/timmygunja",
-
-    // FOOTER
-    gitLink: "github-projects",
   };
 
   const ruText = {
@@ -225,9 +222,6 @@ function App() {
     kaggleProjectLink:
       "https://www.kaggle.com/timmygunja/competitions?tab=active",
     kaggleProjectGitLink: "https://www.kaggle.com/timmygunja",
-
-    // FOOTER
-    gitLink: "github-проекты",
   };
 
   const onClickMe = () => {

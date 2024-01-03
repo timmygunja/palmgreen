@@ -83,6 +83,7 @@ const GlobalStyles = createGlobalStyle`
 
   .footer {
     background-color: ${({ theme }) => theme.footerBackground};
+    background-image: ${({ theme }) => theme.footerBackgroundImage};
   }
   `;
 

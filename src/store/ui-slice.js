@@ -101,9 +101,6 @@ const engText = {
   kaggleProjectLink:
     "https://www.kaggle.com/timmygunja/competitions?tab=active",
   kaggleProjectGitLink: "https://www.kaggle.com/timmygunja",
-
-  // FOOTER
-  gitLink: "github-projects",
 };
 
 const uiSlice = createSlice({

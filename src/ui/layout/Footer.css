@@ -2,19 +2,8 @@
   /* min-height: 300px; */
   /* margin-top: 30px; */
   margin-top: 2rem;
-  /* background-color: rgba(0, 0, 0, 0.85); */
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
-
-  /* background-image: url("../../../public/git-pattern.svg"); */
-
-  /* background-image: linear-gradient(
-      to right,
-      rgb(0, 0, 0, 0.5),
-      rgb(0, 0, 0, 1),
-      rgb(0, 0, 0, 0.5)
-    ),
-    url("../../../public/git-pattern.svg"); */
 
   display: grid;
   grid-template-rows: 4fr 1fr;
