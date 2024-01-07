@@ -63,7 +63,7 @@
   align-items: center;
   border: none;
   background-color: inherit;
-  transition: all 0.25s linear;
+  transition: background-color 0.25s linear;
 }
 
 .mainbar button:hover,
@@ -136,7 +136,7 @@
   margin: 0;
   border: 2px solid gray;
   background: rgb(84, 150, 240);
-  transition: all 0.2s ease;
+  transition: background-color 0.25s linear, border 0.25s linear;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -158,7 +158,7 @@
   border-radius: 50%;
   background: white;
   box-shadow: inset 0 0 15px 5px yellow, 2px 2px 2px rgba(44, 44, 44, 0.4);
-  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+  transition: transform 0.25s cubic-bezier(0.5, 0.1, 0.75, 1.35);
 }
 
 .themetoggle input[type="checkbox"] {
@@ -189,7 +189,7 @@
   border-radius: 6px;
   margin: 0 20px;
   border: 2px solid gray;
-  transition: border 0.3s ease;
+  /* transition: all 0.25s linear, color 0.25s linear; */
 }
 
 .languagetoggle:hover {

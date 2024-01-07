@@ -10,10 +10,8 @@ const GlobalStyles = createGlobalStyle`
   a, 
   button,
   .logotext, 
-  .section-legend,
   .skill-titles {
     color: ${({ theme }) => theme.text};
-    transition: all 0.25s linear;
   }
   
   .navbar {
@@ -24,7 +22,6 @@ const GlobalStyles = createGlobalStyle`
   
   .skill-titles h3 {
     border-bottom: 1px solid ${({ theme }) => theme.skillTitlesBorder};
-    transition: all 0.25s linear;
   }
 
   .mainbar button:hover, 
@@ -36,12 +33,10 @@ const GlobalStyles = createGlobalStyle`
   
   .section-outline {
     border: 2px solid ${({ theme }) => theme.sectionOutline};
-    transition: all 0.25s linear;
   }
 
   .section-legend {
     color: ${({ theme }) => theme.sectionLegend};
-    transition: all 0.25s linear;
   }
 
   .toggle {
@@ -54,6 +49,7 @@ const GlobalStyles = createGlobalStyle`
   
   g.logoBlend > rect {
     fill: ${({ theme }) => theme.cardsBackground};
+    transition: fill 0.25s linear;
   }
   
   g.logoBlend > path {

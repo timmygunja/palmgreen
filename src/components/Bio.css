@@ -26,6 +26,7 @@
   grid-template-areas:
     "title title title"
     "avatar text text";
+  line-height: 1.6rem;
 }
 
 .bio-title {
