@@ -1,9 +1,8 @@
 import "./Bio.css";
-import BioPng from "../ui/BioPng";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import ExamChart from "./ExamChart";
 import { useSelector } from "react-redux";
-import useIsInViewport from "../hooks/useIsInViewport";
+import CustomButton from "../ui/elements/CustomButton";
 
 const Bio = (props) => {
   const {
@@ -30,10 +29,20 @@ const Bio = (props) => {
   } = useSelector((state) => state.ui.currentText);
   const marks = [80, 83, 83, 96];
 
-  // let firstAnimFlag = true;
+  const [bioSectionClass, setBioSectionClass] = useState("shortened");
+  const [moreEduClass, setMoreEduClass] = useState("hidden");
+  const [buttonClass, setButtonClass] = useState("");
+
+  const handleMoreClick = () => {
+    setBioSectionClass("");
+    setMoreEduClass("active");
+    setButtonClass("hide");
+    setTimeout(() => {
+      animateExams();
+    }, 125);
+  };
 
   const animateExams = (mode) => {
-    // firstAnimFlag = false;
     const block = document.querySelectorAll(".block");
     let markCount = 0;
     block.forEach((item) => {
@@ -81,12 +90,9 @@ const Bio = (props) => {
     setTimeout(animateExams, 2300);
   };
 
-  // const chartsRef = useRef(null);
-  // const isInViewport1 = useIsInViewport(chartsRef);
-
-  useEffect(() => {
-    animateExams();
-  });
+  // useEffect(() => {
+  //   animateExams();
+  // });
 
   return (
     <div className={"bio"}>
@@ -101,9 +107,7 @@ const Bio = (props) => {
         <div className="bio-text">{bioText}</div>
       </div>
 
-      {/* <BioPng /> */}
-
-      <div className="bio-education">
+      <div className={"bio-education " + bioSectionClass}>
         <div className="bio-education-title" ref={props.refMyself}>
           {eduTitle}
         </div>
@@ -151,7 +155,16 @@ const Bio = (props) => {
           </div>
         </a>
 
-        <div className="education-card exams" onClick={playAnim}>
+        <div className={"hard-centered " + buttonClass}>
+          <CustomButton variant="outlined" onClick={handleMoreClick}>
+            ...
+          </CustomButton>
+        </div>
+
+        <div
+          className={"education-card exams " + moreEduClass}
+          onClick={playAnim}
+        >
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">
@@ -171,12 +184,10 @@ const Bio = (props) => {
         </div>
 
         <a
-          className="education-card"
+          className={"education-card " + moreEduClass}
           href="https://almamater13.ru"
           target="_blank"
-          // ref={chartsRef}
         >
-          {/* {isInViewport1 && firstAnimFlag && animateExams()} */}
           <div className="education-card-prev hard-centered">
             <div>
               <div className="education-card-logo">

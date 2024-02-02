@@ -261,7 +261,6 @@ function App() {
           sources={{ engText: engText, ruText: ruText }}
         />
 
-        {/* <img scr={"flagusa.png"} style={{ width: "100px", height: "100px" }} /> */}
         <div ref={refMe}></div>
         <Section name={"Bio"} className="bio-container">
           <Bio refMyself={refMyself} />
