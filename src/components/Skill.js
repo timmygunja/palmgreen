@@ -3,7 +3,7 @@ import "./Skill.css";
 const Skill = (props) => {
   const skillPoints = [];
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     skillPoints[i] = <div className="skill-point-disabled"></div>;
   }
 

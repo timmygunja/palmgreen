@@ -72,135 +72,135 @@ const SkillList = (props) => {
         <SkillTable className={web}>
           <Skill
             name={"HTML"}
-            stars={17}
+            stars={8}
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
             name={"CSS"}
-            stars={15}
+            stars={8}
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
             name={"JavaScript"}
-            stars={16}
+            stars={8}
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
             name={"TypeScript"}
-            stars={14}
+            stars={7}
             link={"https://github.com/timmygunja/ts-react-todos"}
           />
           <Skill
             name={"React"}
-            stars={18}
+            stars={9}
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
             name={"Redux"}
-            stars={16}
+            stars={8}
             link={"https://github.com/timmygunja/mern-learn-frontend"}
           />
           <Skill
             name={"NodeJS"}
-            stars={13}
+            stars={7}
             link={"https://github.com/timmygunja/mern-learn-backend"}
           />
           <Skill
             name={"Express"}
-            stars={13}
+            stars={7}
             link={"https://github.com/timmygunja/mern-learn-backend"}
           />
-          <Skill name={"SCSS"} stars={10} />
+          <Skill name={"SCSS"} stars={5} />
         </SkillTable>
         <SkillTable className={python}>
           <Skill
             name={"BeautifulSoup"}
-            stars={13}
+            stars={8}
             link={"https://github.com/timmygunja/cinema_parser_telegram_bot"}
           />
           <Skill
             name={"Selenium"}
-            stars={12}
+            stars={7}
             link={"https://github.com/timmygunja/news_info_parser_bot"}
           />
           <Skill
             name={"Flask"}
-            stars={10}
+            stars={6}
             link={"https://github.com/timmygunja/Webshop_flask"}
           />
           <Skill
             name={"Django"}
-            stars={13}
+            stars={7}
             link={"https://github.com/timmygunja/Webshop_django"}
           />
           <Skill
             name={"Telegram API"}
-            stars={16}
+            stars={8}
             link={"https://github.com/timmygunja/kbsu_schedule_bot"}
           />
-          <Skill name={"VK API"} stars={12} />
-          <Skill name={"Numpy"} stars={14} />
-          <Skill name={"Pandas"} stars={16} />
-          <Skill name={"PyTorch"} stars={10} />
+          <Skill name={"VK API"} stars={7} />
+          <Skill name={"Numpy"} stars={7} />
+          <Skill name={"Pandas"} stars={8} />
+          <Skill name={"PyTorch"} stars={6} />
         </SkillTable>
         <SkillTable className={java}>
           <Skill
             name={"Hibernate"}
-            stars={12}
+            stars={6}
             link={"https://github.com/timmygunja/FinUniverHomework-2-3-Spring"}
           />
           <Skill
             name={"SpringBoot"}
-            stars={12}
+            stars={6}
             link={"https://github.com/timmygunja/FinUniverHomework-2-3-Spring"}
           />
           <Skill
             name={"JUnit"}
-            stars={8}
+            stars={5}
             link={"https://github.com/timmygunja/FinUniverHomework-2-3-Spring"}
           />
           <Skill
             name={"JavaFX"}
-            stars={14}
+            stars={7}
             link={"https://github.com/timmygunja/FinUniverHomework-2-3-JavaFX"}
           />
           <Skill
             name={"Telegram API"}
-            stars={16}
+            stars={8}
             link={"https://github.com/timmygunja/WeatherTelegramBot"}
           />
         </SkillTable>
         <SkillTable className={devOps}>
-          <Skill name={"Linux bash"} stars={16} />
-          <Skill name={"MacOS zsh"} stars={14} />
-          <Skill name={"Windows cmd"} stars={12} />
+          <Skill name={"Linux bash"} stars={8} />
+          <Skill name={"MacOS zsh"} stars={7} />
+          <Skill name={"Windows cmd"} stars={6} />
           <Skill
             name={"Git"}
-            stars={16}
+            stars={8}
             link={"https://github.com/timmygunja"}
           />
-          <Skill name={"Jira"} stars={12} />
-          <Skill name={"Confluence"} stars={12} />
-          <Skill name={"Slack"} stars={12} />
-          <Skill name={"Docker"} stars={10} />
+          <Skill name={"Jira"} stars={7} />
+          <Skill name={"Confluence"} stars={7} />
+          <Skill name={"Slack"} stars={7} />
+          <Skill name={"Docker"} stars={6} />
         </SkillTable>
         <SkillTable className={sql}>
-          <Skill name={"Script-writing"} stars={14} />
+          <Skill name={"Script-writing"} stars={7} />
           <Skill
             name={"SQLite"}
-            stars={14}
+            stars={7}
             link={"https://github.com/timmygunja/Webshop_django"}
           />
-          <Skill name={"Postgre"} stars={12} />
-          <Skill name={"Oracle"} stars={14} />
+          <Skill name={"Postgre"} stars={7} />
+          <Skill name={"Oracle"} stars={8} />
           <Skill
             name={"SqlAlchemy"}
-            stars={12}
+            stars={7}
             link={"https://github.com/timmygunja/Webshop_django"}
           />
           <Skill
             name={"MongoDB"}
-            stars={14}
+            stars={7}
             link={"https://github.com/timmygunja/mern-learn-backend"}
           />
         </SkillTable>
