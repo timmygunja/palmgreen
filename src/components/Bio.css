@@ -26,7 +26,7 @@
   grid-template-areas:
     "title title title"
     "avatar text text";
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 
 .bio-title {
@@ -57,10 +57,10 @@
   /* font-size: 26px; */
   /* font-weight: 200; */
   /* font-size: clamp(0.35rem, 1.7vw, 1.5rem); */
-  font-size: var(--h8-font-size);
+  font-size: var(--h9-font-size);
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,9 +142,13 @@
 }
 
 .active {
-  transition: all 800ms ease-in, transform 400ms ease-out;
+  transition: z-index 800ms ease-in, opacity 800ms ease-in,
+    transform 400ms ease-out, background-color 300ms linear,
+    box-shadow 300ms linear;
+
   display: grid;
   opacity: 1;
+  z-index: 10;
 }
 
 .education-card:hover {

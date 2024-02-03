@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.25s linear;
+    transition: all 0.3s linear;
   }
   
   a, 
@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   .navbar {
     background: ${({ theme }) => theme.navBack};
     border-bottom: 1px solid ${({ theme }) => theme.navBorder};
-    transition: all 0.25s linear;
+    transition: all 0.3s linear;
   }
   
   .skill-titles h3 {
@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
   
   g.logoBlend > rect {
     fill: ${({ theme }) => theme.cardsBackground};
-    transition: fill 0.25s linear;
+    transition: fill 0.3s linear;
   }
   
   g.logoBlend > path {
