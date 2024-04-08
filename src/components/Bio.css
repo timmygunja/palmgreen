@@ -95,6 +95,12 @@
   grid-gap: 1.4rem 0;
 }
 
+@media screen and (max-width: 800px) {
+  .bio-education {
+    margin: 2rem 0 2.5rem;
+  }
+}
+
 .shortened {
   height: 20rem;
 }

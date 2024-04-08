@@ -46,7 +46,7 @@ const engText = {
   mernProjectDescImgPath: "../../layers.png",
   mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
   mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
-  mernProjectLink: "https://mern-timmygunja.vercel.app",
+  mernProjectLink: "https://drink-planet.vercel.app",
   mernProjectGitLink: "https://github.com/timmygunja/mern-learn-frontend",
 
   newsBotProjectTitle: "Auditorial reporting automation",

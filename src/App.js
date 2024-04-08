@@ -60,7 +60,7 @@ function App() {
     mernProjectDescImgPath: "../../layers.png",
     mernProjectFront: "Frontend: 24 folders / 82 files / 4442 code lines",
     mernProjectBack: "Backend: 7 folders / 17 files / 934 code lines",
-    mernProjectLink: "https://mern-timmygunja.vercel.app",
+    mernProjectLink: "https://drink-planet.vercel.app",
     mernProjectGitLink: "https://github.com/timmygunja/mern-learn-frontend",
 
     newsBotProjectTitle: "Auditorial reporting automation",
@@ -166,7 +166,7 @@ function App() {
     mernProjectDescImgPath: "../../layers.png",
     mernProjectLinkFront: "Фронт: 24 папки / 82 файла / 4442 строки кода",
     mernProjectLinkBack: "Бэк: 7 папок / 17 файлов / 934 строки кода",
-    mernProjectLink: "https://mern-timmygunja.vercel.app",
+    mernProjectLink: "https://drink-planet.vercel.app",
     mernProjectGitLink: "https://github.com/timmygunja/mern-learn-frontend",
 
     newsBotProjectTitle: "Автоматизация аудиторской деятельности",

@@ -9,7 +9,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   color: "rgb(34, 224, 123)",
   letterSpacing: "1px",
   background: "transparent",
-  border: "0.125em solid rgb(34, 224, 123)",
+  border: "0.1em solid rgba(34, 224, 123, 0.8)",
   borderRadius: "4px",
   boxShadow:
     "0 0 0.25em 0 rgb(34, 224, 123), inset 0 0 0.5em 0 rgb(34, 224, 123)",
