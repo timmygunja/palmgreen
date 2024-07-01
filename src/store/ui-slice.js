@@ -32,7 +32,7 @@ const engText = {
   eduMagTitle:
     "Financial University under the Government of Russian Federation",
   eduMagSpeciality: "DevOps Engineering",
-  eduMagYears: "2023 - 2025",
+  eduMagYears: "Moscow 2023 - 2025",
 
   projectDescMainTitle: "Project description:",
   projectDescStructure: "Project structure:",

@@ -6,6 +6,13 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.3s linear;
   }
+
+  .App {
+    background-image: url("/backimage.png");
+    background-repeat: no-repeat;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+  }
   
   a, 
   button,

@@ -5,6 +5,7 @@ const secondaryDarkColor = "rgba(105, 255, 175, 0.7)";
 
 export const lightTheme = {
   body: "#fafafa",
+  bodyImage: "rgba(250, 250, 250, 0.65)",
   text: "#000000",
   navBack: "#ffffff",
   navBorder: "#f5f5f5",
@@ -34,6 +35,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   body: "#313032",
+  bodyImage: "rgba(49, 48, 50, 0.85)",
   text: "rgb(237, 237, 237)",
   navBack: "#363538",
   navBorder: mainDarkColor,

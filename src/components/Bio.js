@@ -1,5 +1,5 @@
 import "./Bio.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ExamChart from "./ExamChart";
 import { useSelector } from "react-redux";
 import CustomButton from "../ui/elements/CustomButton";
