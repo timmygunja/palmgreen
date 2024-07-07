@@ -1,0 +1,24 @@
+.animated-typing-text {
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+.animated-typing-text::after {
+  content: "|";
+  display: inline-block;
+  width: 0;
+  animation: cursor-blink 0.6s infinite alternate;
+}
+
+@keyframes cursor-blink {
+  0% {
+    color: rgb(80, 80, 80);
+  }
+  30% {
+    color: rgb(80, 80, 80);
+  }
+  100% {
+    color: transparent;
+  }
+}

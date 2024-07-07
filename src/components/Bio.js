@@ -3,6 +3,7 @@ import { useState } from "react";
 import ExamChart from "./ExamChart";
 import { useSelector } from "react-redux";
 import CustomButton from "../ui/elements/CustomButton";
+import AnimatedTypingText from "./AnimatedTypingText";
 
 const Bio = (props) => {
   const {
@@ -97,8 +98,9 @@ const Bio = (props) => {
   return (
     <div className={"bio"}>
       <div className="bio-about">
-        <h3 className="bio-title">Fullstack Developer</h3>
-        {/* <div className="bio-title">Dev</div> */}
+        {/* <h3 className="bio-title">Fullstack Developer</h3> */}
+        <AnimatedTypingText />
+
         <div className="hard-centered">
           <div className="bio-avatar hard-centered">
             <img src={"../../face.jpeg"}></img>
